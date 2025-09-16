@@ -1,664 +1,289 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تأجير كراسي وطاولات ومناسبات | أفضل خدمات التأجير في الدمام والرياض وجدة</title>
-    <meta name="description" content="متخصصون في تأجير كراسي وطاولات ومستلزمات المناسبات. خدماتنا تشمل تأجير كنب، كوش، طاولات استقبال، مكبرات صوت، حواجز، طاولات كوكتيل، شاشات عرض، أضواء ليزر، مكيفات، دفايات، وجلسات شعبية ومغربية. نغطي الدمام والشرقية والرياض وجدة.">
-    <meta name="keywords" content="تأجير كراسي, تأجير طاولات, تأجير كنب, تأجير كوش, تأجير طاولات استقبال, تأجير مكبرات صوت, تأجير حواجز, تأجير ممرات, تأجير طاولات كوكتيل, تأجير سماعات, تأجير شاشات عرض, تأجير ليزرات, تأجير مكيفات, تأجير دفايات, تأجير أضواء, تأجير جلسات شعبية, تأجير جلسات مغربية, تأجير كراسي ملكية, تأجير طاولات قهوجيين, تأجير صبابين, تأجير مناسبات, الدمام, الرياض, جدة, الشرقية">
-    <meta name="author" content="متجر تأجير الكراسي والطاولات">
-    <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-        
-        /* الشريط العلوي */
-        .top-bar {
-            background-color: #2c3e50;
-            color: white;
-            padding: 10px 0;
-            font-size: 14px;
-        }
-        
-        .top-bar-content {
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        /* شريط التنقل */
-        .navbar {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .nav-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #2c3e50;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-        
-        .logo i {
-            margin-left: 10px;
-            color: #e67e22;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-links li {
-            margin-left: 25px;
-        }
-        
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        .nav-links a:hover {
-            color: #e67e22;
-        }
-        
-        .icons a {
-            margin-right: 15px;
-            color: #333;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        
-        /* الهيرو */
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-            height: 500px;
-            display: flex;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-        
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
-        
-        .btn {
-            display: inline-block;
-            background-color: #e67e22;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s;
-            margin: 5px;
-        }
-        
-        .btn:hover {
-            background-color: #d35400;
-        }
-        
-        .btn-outline {
-            background-color: transparent;
-            border: 2px solid #e67e22;
-        }
-        
-        .btn-outline:hover {
-            background-color: #e67e22;
-        }
-        
-        /* قسم الخدمات */
-        .services {
-            padding: 80px 0;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-            font-size: 32px;
-            color: #2c3e50;
-            position: relative;
-        }
-        
-        .section-title::after {
-            content: "";
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background-color: #e67e22;
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .service-card {
-            background-color: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .service-img {
-            height: 200px;
-            overflow: hidden;
-        }
-        
-        .service-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-        
-        .service-card:hover .service-img img {
-            transform: scale(1.1);
-        }
-        
-        .service-info {
-            padding: 20px;
-        }
-        
-        .service-info h3 {
-            margin-bottom: 10px;
-            font-size: 20px;
-            color: #2c3e50;
-        }
-        
-        .service-info p {
-            color: #7f8c8d;
-            margin-bottom: 15px;
-        }
-        
-        /* قسم المناطق */
-        .locations {
-            background-color: #2c3e50;
-            color: white;
-            padding: 80px 0;
-        }
-        
-        .locations-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .location-card {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 8px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        
-        .location-card:hover {
-            transform: translateY(-10px);
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-        
-        .location-card i {
-            font-size: 48px;
-            margin-bottom: 20px;
-            color: #e67e22;
-        }
-        
-        .location-card h3 {
-            margin-bottom: 15px;
-            font-size: 22px;
-        }
-        
-        /* قسم العملاء */
-        .testimonials {
-            padding: 80px 0;
-        }
-        
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .testimonial-card {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 20px;
-            color: #555;
-        }
-        
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-        }
-        
-        .testimonial-author img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-left: 15px;
-            object-fit: cover;
-        }
-        
-        .author-info h4 {
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-        
-        /* الفوتر */
-        .footer {
-            background-color: #1a252f;
-            color: white;
-            padding: 60px 0 30px;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-column h3 {
-            font-size: 20px;
-            margin-bottom: 20px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-        
-        .footer-column h3::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 2px;
-            background-color: #e67e22;
-        }
-        
-        .footer-column p {
-            margin-bottom: 15px;
-            color: #bdc3c7;
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links a {
-            color: #bdc3c7;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .footer-links a:hover {
-            color: #e67e22;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: #2c3e50;
-            color: white;
-            border-radius: 50%;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        
-        .social-links a:hover {
-            background-color: #e67e22;
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid #2c3e50;
-            color: #bdc3c7;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-content {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            
-            .nav-links li {
-                margin: 5px 10px;
-            }
-            
-            .hero h1 {
-                font-size: 36px;
-            }
-            
-            .hero p {
-                font-size: 18px;
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تأجير كنب وطاولات وكراسي — تأجير مستلزمات الحفلات والمناسبات</title>
+  <meta name="description" content="خدمة تأجير كنب مفرد وثلاثي، تأجير طاولات وكراسي، تأجير جلسات شعبية ومغربية، تأجير سماعات، تأجير مكيفات، دفايات وخيام. أفضل باقات لتأجير مستلزمات الحفلات والمناسبات مع توصيل وتركيب في الدمام والمنطقة الشرقية." />
+  <meta name="keywords" content="تأجير كنب, تاجير كنب مفرد, تاجير كنب ثلاثي, تاجير طاولات, تاجير كراسي, تاجير طاولات وكراسي, تاجير جلسات, تاجير سماعات, تاجير جلسات شعبية, تاجير جلسات مغربية, تاجير مكيفات, تاجير دفايات, تاجير خيام, تأجير مستلزمات الحفلات, تأجير مستلزمات المناسبات" />
+  <link rel="icon" href="https://i.postimg.cc/QxMDh9df/favicon.png" type="image/png" />
+  <meta name="author" content="الأبيض للتسويق الرقمي" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="تأجير كنب وطاولات وكراسي — تأجير مستلزمات الحفلات والمناسبات" />
+  <meta property="og:description" content="تأجير كنب مفرد وثلاثي، تأجير طاولات وكراسي، تأجير جلسات شعبية ومغربية، تأجير سماعات، تأجير مكيفات، دفايات وخيام. احجز الآن 0559534118" />
+  <meta property="og:image" content="https://i.postimg.cc/dVN4fLFp/IMG-2309.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+
+  <style>
+    body{font-family: "Segoe UI", Tahoma, Arial, "Helvetica Neue";background:#fff;color:#222;margin:0;padding:0;line-height:1.6}
+    header{background:linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.15)), url('https://i.postimg.cc/kXBd7YGF/IMG-2564.jpg') center/cover no-repeat;padding:36px 18px;color:#fff}
+    .container{max-width:1200px;margin:0 auto;padding:18px}
+    h1{font-size:30px;margin:0 0 8px}
+    h2{font-size:22px;margin:18px 0 8px}
+    .lead{font-size:16px;opacity:.95}
+    .actions{margin-top:14px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+    .btn-call{background:#1e90ff;color:#fff;margin-left:8px}
+    .btn-wa{background:#25d366;color:#fff}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .card{background:#fdfdfd;border-radius:10px;padding:14px;box-shadow:0 6px 18px rgba(10,10,10,0.05)}
+    .card img{width:100%;height:180px;object-fit:cover;border-radius:8px}
+    .keywords{font-weight:700;color:#333;margin-top:8px}
+    .meta{color:#666;font-size:14px}
+    footer{background:#111;color:#fff;padding:18px;margin-top:30px}
+    .faq details{background:#fff;border-radius:8px;padding:12px;margin-bottom:8px}
+    .rich-text{background:#fff;padding:12px;border-radius:8px;margin-bottom:10px}
+    @media (max-width:600px){h1{font-size:20px}}
+  </style>
+
+  <!-- Structured Data: Organization + FAQ + Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "الأبيض للتسويق الرقمي - تأجير مستلزمات الحفلات",
+    "image": "https://i.postimg.cc/dVN4fLFp/IMG-2309.jpg",
+    "@id": "",
+    "url": "",
+    "telephone": "+966559534118",
+    "address": {"@type": "PostalAddress","addressLocality": "الدمام","addressCountry": "SA"},
+    "priceRange": "SR",
+    "description": "تأجير كنب مفرد وثلاثي، تأجير طاولات وكراسي، تأجير جلسات شعبية ومغربية، تأجير سماعات ومكيفات ودفايات وخيام."
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"كم سعر تأجير كنب مفرد؟","acceptedAnswer":{"@type":"Answer","text":"سعر تأجير الكنب المفرد يختلف حسب الخامة والحالة ومدة التأجير؛ ارسل طلبك مع التاريخ والكميات للحصول على عرض سعر فوري على 0559534118."}},
+      {"@type":"Question","name":"كم سعر تأجير كنب ثلاثي؟","acceptedAnswer":{"@type":"Answer","text":"تأجير كنب ثلاثي بأسعار تنافسية حسب الموديل والتنظيف والتوصيل. اتصل واحصل على باقات تأجير كنب ثلاثي المناسبة لاحتفالك."}},
+      {"@type":"Question","name":"هل تقدمون باقة تأجير طاولات وكراسي مع نصب وترتيب؟","acceptedAnswer":{"@type":"Answer","text":"نعم، نوفر باقات جاهزة لتأجير طاولات وكراسي مع خدمة التوصيل والتركيب والفك بعد الحدث."}},
+      {"@type":"Question","name":"هل توفرون تأجير جلسات شعبية ومغربية؟","acceptedAnswer":{"@type":"Answer","text":"نعم، لدينا جلسات أرضية وشعبية ومغربية بجميع الأحجام ويمكن طلب صور ومقاسات وتفاصيل الباقات عبر الواتساب."}},
+      {"@type":"Question","name":"كيف أحجز تأجير مكيفات أو دفايات للمناسبة؟","acceptedAnswer":{"@type":"Answer","text":"للحجز اتصل أو راسلنا بالواتساب مع تاريخ الفعالية والموقع ونوع المكيف أو الدفاية المطلوب وسنرسل لك عرض سعر وترتيب التوصيل والتركيب."}}
+    ]
+  }
+  </script>
+
 </head>
 <body>
-    <!-- الشريط العلوي -->
-    <div class="top-bar">
-        <div class="container top-bar-content">
-            <div>اتصل بنا: 966123456789+</div>
-            <div>خدمة التأجير متاحة في الدمام والرياض وجدة</div>
-        </div>
+  <header>
+    <div class="container">
+      <h1>تأجير كنب وطاولات وكراسي — تأجير مستلزمات الحفلات والمناسبات</h1>
+      <p class="lead">نوفر تأجير كنب مفرد وثلاثي، تأجير طاولات وكراسي، تأجير جلسات شعبية ومغربية، تأجير سماعات ومكيفات ودفايات وخيام. توصيل وتركيب في الدمام والمنطقة الشرقية. اتصل 0559534118</p>
+      <div class="actions">
+        <a class="btn btn-call" href="tel:0559534118">اتصل الآن 0559534118</a>
+        <a class="btn btn-wa" href="https://wa.me/966559534118">واتساب</a>
+      </div>
     </div>
-    
-    <!-- شريط التنقل -->
-    <nav class="navbar">
-        <div class="container nav-content">
-            <a href="#" class="logo">
-                <i class="fas fa-chair"></i>
-                تأجير الكراسي والطاولات
-            </a>
-            
-            <ul class="nav-links">
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">خدماتنا</a></li>
-                <li><a href="#">معرض الأعمال</a></li>
-                <li><a href="#">مناطق الخدمة</a></li>
-                <li><a href="#">اتصل بنا</a></li>
-            </ul>
-            
-            <div class="icons">
-                <a href="#"><i class="fas fa-search"></i></a>
-                <a href="#"><i class="fas fa-phone"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </div>
-    </nav>
-    
-    <!-- قسم الهيرو -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>خدمات تأجير كراسي وطاولات للمناسبات</h1>
-            <p>نوفر جميع مستلزمات المناسبات من كراسي، طاولات، كنب، كوش، أجهزة صوت وإضاءة، ومكيفات لتجعل مناسبتك مميزة</p>
-            <div>
-                <a href="#" class="btn">اطلب الآن</a>
-                <a href="#" class="btn btn-outline">استفسار عن الخدمات</a>
-            </div>
-        </div>
+  </header>
+
+  <main class="container">
+    <!-- خدمات مفصّلة طويلاً مع كلمات مفتاحية متكررة لكل خدمة -->
+    <section aria-labelledby="services">
+      <h2 id="services">قائمة الخدمات — تأجير كنب وطاولات وكراسي وتأجير مستلزمات الحفلات</h2>
+      <p class="meta">نغطي كل احتياجات مناسبتك: تأجير كنب مفرد، تاجير كنب ثلاثي، تاجير طاولات وكراسي، تاجير جلسات، تاجير سماعات، تاجير مكيفات، تاجير دفايات، تاجير خيام — مع توصيل وتركيب.</p>
+
+      <div class="grid">
+        <!-- تاجير كنب مفرد -->
+        <article class="card">
+          <img src="https://i.postimg.cc/dVN4fLFp/IMG-2309.jpg" alt="تأجير كنب مفرد" />
+          <h3>تأجير كنب مفرد — تاجير كنب مفرد</h3>
+          <div class="rich-text">
+            <p>نقدّم تأجير كنب مفرد بموديلات متعددة: قماش فخم، جلد صناعي وموديلات كلاسيكية وعصرية. تأجير كنب مفرد مناسب لاستقبال الضيوف أو كجزء من باقة تأجير كنب وتأجير مستلزمات الحفلات والمناسبات. نكرر: تأجير كنب، تاجير كنب مفرد، تأجير مستلزمات الحفلات والمناسبات.</p>
+            <p class="keywords">كلمات مفتاحية: تاجير كنب مفرد، تأجير كنب، تأجير كنب وتأجير مستلزمات الحفلات.</p>
+            <div style="margin-top:10px"><a class="btn btn-call" href="tel:0559534118">اتصال</a> <a class="btn btn-wa" href="https://wa.me/966559534118">واتساب</a></div>
+          </div>
+        </article>
+
+        <!-- تاجير كنب ثلاثي -->
+        <article class="card">
+          <img src="https://i.postimg.cc/2y90KBtP/IMG-2371.jpg" alt="تأجير كنب ثلاثي" />
+          <h3>تأجير كنب ثلاثي — تاجير كنب ثلاثي</h3>
+          <div class="rich-text">
+            <p>تأجير كنب ثلاثي بتصاميم فخمة تتناسب مع صالات الضيافة الكبرى. توفرنا على موديلات قابلة للتنسيق مع سجاد وممرات وإضاءات لخلق ديكور متكامل. تأجير كنب ثلاثي، تأجير كنب وتأجير مستلزمات الحفلات والمناسبات.</p>
+            <p class="keywords">كلمات مفتاحية: تاجير كنب ثلاثي، تأجير كنب ثلاثي، تأجير كنب.</p>
+            <div style="margin-top:10px"><a class="btn btn-call" href="tel:0559534118">اتصال</a> <a class="btn btn-wa" href="https://wa.me/966559534118">واتساب</a></div>
+          </div>
+        </article>
+
+        <!-- تاجير طاولات وكراسي -->
+        <article class="card">
+          <img src="https://i.postimg.cc/Gh7pXhmG/5efdb91c-9d74-4dcf-a0a5-86cbfc1a9aa4.jpg" alt="تأجير طاولات وكراسي" />
+          <h3>تأجير طاولات وكراسي — تاجير طاولات وكراسي</h3>
+          <div class="rich-text">
+            <p>باقات تأجير طاولات وكراسي للمناسبات: طاولات طعام، طاولات تقديم، وكراسي متنوعة (معدنية، بلاستيك، ملكي). نساعدك تختار بين باقات اقتصادية وباقات فخمة. تأجير طاولات وكراسي، تاجير طاولات وكراسي، تأجير مستلزمات الحفلات.</p>
+            <p class="keywords">كلمات مفتاحية: تاجير طاولات وكراسي، تأجير طاولات وكراسي، تأجير طاولات، تأجير كراسي.</p>
+            <div style="margin-top:10px"><a class="btn btn-call" href="tel:0559534118">اتصال</a> <a class="btn btn-wa" href="https://wa.me/966559534118">واتساب</a></div>
+          </div>
+        </article>
+
+        <!-- تاجير كراسي -->
+        <article class="card">
+          <img src="https://i.postimg.cc/zBCQfBcQ/IMG-2374.jpg" alt="تأجير كراسي" />
+          <h3>تأجير كراسي — تاجير كراسي</h3>
+          <div class="rich-text">
+            <p>خدمة تأجير كراسي بأنواعها: كرسي ملكي للعرسان، كرسي محاضرات ومناسبات رسمية، وكراسي بلاستيكية للفعاليات العامة. نوفر تأجير كراسي بكميات كبيرة مع خصومات للحجوزات الجماعية.</p>
+            <p class="keywords">كلمات مفتاحية: تاجير كراسي، تأجير كراسي، تأجير كراسي بكميات.</p>
+            <div style="margin-top:10px"><a class="btn btn-call" href="tel:0559534118">اتصال</a> <a class="btn btn-wa" href="https://wa.me/966559534118">واتساب</a></div>
+          </div>
+        </article>
+
+        <!-- تاجير طاولات -->
+        <article class="card">
+          <img src="https://i.postimg.cc/6pQx1dmp/IMG-2375.jpg" alt="تأجير طاولات" />
+          <h3>تأجير طاولات — تاجير طاولات</h3>
+          <div class="rich-text">
+            <p>طاولات طعام، طاولات كوفي، وطاولات تقديم بأحجام وأنماط مختلفة. باقات تأجير طاولات مرنة بناءً على نوع الحدث: وليمة، مؤتمر، حفل زفاف أو احتفال خاص.</p>
+            <p class="keywords">كلمات مفتاحية: تاجير طاولات، تأجير طاولات، تأجير طاولات وكراسي.</p>
+            <div style="margin-top:10px"><a class="btn btn-call" href="tel:0559534118">اتصال</a> <a class="btn btn-wa" href="https://wa.me/966559534118">واتساب</a></div>
+          </div>
+        </article>
+
+        <!-- تاجير جلسات -->
+        <article class="card">
+          <img src="https://i.postimg.cc/vmk1m8V5/IMG-2373.jpg" alt="تأجير جلسات" />
+          <h3>تأجير جلسات — تاجير جلسات</h3>
+          <div class="rich-text">
+            <p>نقدّم تأجير جلسات داخلية وخارجية، جلسات استقبال، ومجموعات جلوس متناسقة. مناسب للصالات والمنازل والفعاليات المفتوحة.</p>
+            <p class="keywords">كلمات مفتاحية: تاجير جلسات، تأجير جلسات خارجية، تأجير جلسات استقبال.</p>
+            <div style="margin-top:10px"><a class="btn btn-call" href="tel:0559534118">اتصال</a> <a class="btn btn-wa" href="https://wa.me/966559534118">واتساب</a></div>
+          </div>
+        </article>
+
+        <!-- تاجير سماعات -->
+        <article class="card">
+          <img src="https://i.postimg.cc/J7dwgyjr/c60ae1e5-6514-4989-9c1b-ddf978c41be4.jpg" alt="تأجير سماعات ومكبرات صوت" />
+          <h3>تأجير سماعات ومكبرات صوت — تاجير سماعات</h3>
+          <div class="rich-text">
+            <p>أنظمة صوت متكاملة: سماعات، مضخم صوت، ودي جي ستيشن. نوفر تركيب وتشغيل ومهندس صوت إذا احتجت، لتضمن جودة الصوت في الحفل كاملًا.</p>
+            <p class="keywords">كلمات مفتاحية: تاجير سماعات، تأجير مكبرات صوت، تأجير سماعات وتأجير مستلزمات الحفلات.</p>
+            <div style="margin-top:10px"><a class="btn btn-call" href="tel:0559534118">اتصال</a> <a class="btn btn-wa" href="https://wa.me/966559534118">واتساب</a></div>
+          </div>
+        </article>
+
+        <!-- تاجير جلسات شعبية ومغربية -->
+        <article class="card">
+          <img src="https://i.postimg.cc/PryQ5ZrZ/IMG-2316.jpg" alt="تأجير جلسات شعبية ومغربية" />
+          <h3>تأجير جلسات شعبية ومغربية — تاجير جلسات شعبية ومغربية</h3>
+          <div class="rich-text">
+            <p>جلسات شعبية ومغربية جاهزة بألوان ونقوش تقليدية. مناسبة للأفراح والحفلات الثقافية والفعاليات المجتمعية. نوفر سجاد وإكسسوارات لتكملة الديكور.</p>
+            <p class="keywords">كلمات مفتاحية: تاجير جلسات شعبية، تاجير جلسات مغربية، تأجير جلسات شعبية ومغربية.</p>
+            <div style="margin-top:10px"><a class="btn btn-call" href="tel:0559534118">اتصال</a> <a class="btn btn-wa" href="https://wa.me/966559534118">واتساب</a></div>
+          </div>
+        </article>
+
+        <!-- تاجير مكيفات -->
+        <article class="card">
+          <img src="https://i.postimg.cc/Fzg8RR7R/IMG-2299.jpg" alt="تأجير مكيفات" />
+          <h3>تأجير مكيفات — تاجير مكيفات</h3>
+          <div class="rich-text">
+            <p>تأجير مكيفات متنقلة والثابتة للفعاليات الخارجية والداخلية. نراعي قدرة المكان ونوفّر خيارات تبريد مناسبة لأي حجم حدث.</p>
+            <p class="keywords">كلمات مفتاحية: تاجير مكيفات، تأجير مكيفات للفعاليات، تأجير مكيفات متنقلة.</p>
+            <div style="margin-top:10px"><a class="btn btn-call" href="tel:0559534118">اتصال</a> <a class="btn btn-wa" href="https://wa.me/966559534118">واتساب</a></div>
+          </div>
+        </article>
+
+        <!-- تاجير دفايات -->
+        <article class="card">
+          <img src="https://i.postimg.cc/vBvtx6Lp/46d351d7-91d2-4d35-8424-f4342844f1c6.jpg" alt="تأجير دفايات" />
+          <h3>تأجير دفايات — تاجير دفايات</h3>
+          <div class="rich-text">
+            <p>خدمة تأجير دفايات كهربائية وغازية للحفلات الشتوية أو الفعاليات المسائية. التركيب والتوزيع تشمل فحص الأمان قبل الاستخدام.</p>
+            <p class="keywords">كلمات مفتاحية: تاجير دفايات، تأجير دفايات للفعاليات، تاجير دفايات كهربائية.</p>
+            <div style="margin-top:10px"><a class="btn btn-call" href="tel:0559534118">اتصال</a> <a class="btn btn-wa" href="https://wa.me/966559534118">واتساب</a></div>
+          </div>
+        </article>
+
+        <!-- تاجير خيام -->
+        <article class="card">
+          <img src="https://i.postimg.cc/63RdJbQV/b3168f60-5a8a-49be-a705-45da4fcf5726.jpg" alt="تأجير خيام" />
+          <h3>تأجير خيام — تاجير خيام</h3>
+          <div class="rich-text">
+            <p>خيام بجميع الأحجام: خيمة ضيافة كبيرة، خيم طعام ومناطق جلوس. نوفر تركيب وتأمين الخيام مع امتثال لمعايير الأمان والطقس.</p>
+            <p class="keywords">كلمات مفتاحية: تاجير خيام، تأجير خيام للفعاليات، تاجير خيام ضيافة.</p>
+            <div style="margin-top:10px"><a class="btn btn-call" href="tel:0559534118">اتصال</a> <a class="btn btn-wa" href="https://wa.me/966559534118">واتساب</a></div>
+          </div>
+        </article>
+
+      </div>
+
+      <p style="margin-top:12px">نكرر لضمان تركيز محركات البحث: تأجير كنب، تاجير كنب مفرد، تاجير كنب ثلاثي، تاجير طاولات وكراسي، تاجير كراسي، تاجير طاولات، تاجير جلسات، تاجير سماعات، تاجير جلسات شعبية ومغربية، تاجير مكيفات، تاجير دفايات، تاجير خيام — احجز الآن عبر 0559534118.</p>
     </section>
-    
-    <!-- قسم الخدمات -->
-    <section class="services">
-        <div class="container">
-            <h2 class="section-title">خدمات التأجير المتوفرة</h2>
-            
-            <div class="services-grid">
-                <!-- خدمة 1 -->
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="تأجير كراسي">
-                    </div>
-                    <div class="service-info">
-                        <h3>تأجير كراسي</h3>
-                        <p>كراسي فاخرة للمناسبات والأحداث، كراسي ملكية، كراسي طاولات القهوجيين والصابين</p>
-                        <a href="#" class="btn">اطلب الخدمة</a>
-                    </div>
-                </div>
-                
-                <!-- خدمة 2 -->
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1555041463-a37d6f223a02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="تأجير طاولات">
-                    </div>
-                    <div class="service-info">
-                        <h3>تأجير طاولات</h3>
-                        <p>طاولات استقبال، طاولات كوكتيل، طاولات طعام، طاولات قهوجيين بكافة الأحجام والأنواع</p>
-                        <a href="#" class="btn">اطلب الخدمة</a>
-                    </div>
-                </div>
-                
-                <!-- خدمة 3 -->
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="تأجير كنب">
-                    </div>
-                    <div class="service-info">
-                        <h3>تأجير كنب</h3>
-                        <p>كنب فاخر للمناسبات والجالسات، كنب عربي، كنب مغربي، كنب حديث بمختلف التصاميم</p>
-                        <a href="#" class="btn">اطلب الخدمة</a>
-                    </div>
-                </div>
-                
-                <!-- خدمة 4 -->
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="تأجير أجهزة صوت وإضاءة">
-                    </div>
-                    <div class="service-info">
-                        <h3>تأجير أجهزة صوت وإضاءة</h3>
-                        <p>مكبرات صوت، سماعات، شاشات عرض، أضواء ليزر، أنظمة إضاءة متكاملة للمناسبات</p>
-                        <a href="#" class="btn">اطلب الخدمة</a>
-                    </div>
-                </div>
-                
-                <!-- خدمة 5 -->
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1616587226157-48e49175ee20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="تأجير مكيفات ودفايات">
-                    </div>
-                    <div class="service-info">
-                        <h3>تأجير مكيفات ودفايات</h3>
-                        <p>مكيفات هواء، دفايات، أجهزة تبريد وتدفئة للمناسبات في الأماكن المفتوحة والمغلقة</p>
-                        <a href="#" class="btn">اطلب الخدمة</a>
-                    </div>
-                </div>
-                
-                <!-- خدمة 6 -->
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1592892149662-2b9e11b34ac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="تأجير جلسات">
-                    </div>
-                    <div class="service-info">
-                        <h3>تأجير جلسات</h3>
-                        <p>جلسات شعبية، جلسات مغربية، جلسات عربية، كوش وأركان خاصة للمناسبات</p>
-                        <a href="#" class="btn">اطلب الخدمة</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <!-- قسم محتوى طويل وغني (مقالات صغيرة لكل خدمة) -->
+    <section style="margin-top:20px">
+      <h2>مقالات ونصائح لكل خدمة</h2>
+
+      <article class="card" style="padding:16px;">
+        <h3>كيف تختار بين تأجير كنب مفرد وثلاثي</h3>
+        <p>اختيارك يعتمد على مساحة المكان وعدد الضيوف وطابع الحدث. الكنب المفرد مناسب للاستقبال، أما الكنب الثلاثي يعطي انطباع فخم للصالونات. بعد تحديد القياسات، نزوّدك بصور ومواصفات لتقرير أسرع.</p>
+      </article>
+
+      <article class="card" style="padding:16px;margin-top:10px;">
+        <h3>أفضل باقات تأجير طاولات وكراسي للولائم</h3>
+        <p>نقدّم باقات مصممة للحفلات الصغيرة والمتوسطة والكبيرة. باقاتنا تشمل الطاولات والكراسي والمفارش وخدمة التوصيل والتركيب. احصل على خصم للحجوزات المبكرة.</p>
+      </article>
+
+      <article class="card" style="padding:16px;margin-top:10px;">
+        <h3>نصائح لترتيب الجلسات الشعبية والمغربية</h3>
+        <p>اختر ألوان متناسقة مع ثيم الحفل، وضع سجاد ومساند مناسبة وتأكد من وجود إضاءة كافية وممر واضح للاستقبال. نحن نوفر كل ما تحتاجه من تأجير جلسات شعبية ومغربية.</p>
+      </article>
+
     </section>
-    
-    <!-- قسم المناطق -->
-    <section class="locations">
-        <div class="container">
-            <h2 class="section-title" style="color: white;">مناطق الخدمة</h2>
-            
-            <div class="locations-grid">
-                <div class="location-card">
-                    <i class="fas fa-city"></i>
-                    <h3>الدمام</h3>
-                    <p>خدمة تأجير كراسي وطاولات في الدمام وجميع أنحاء المنطقة الشرقية</p>
-                </div>
-                
-                <div class="location-card">
-                    <i class="fas fa-landmark"></i>
-                    <h3>الرياض</h3>
-                    <p>خدمة تأجير كراسي وطاولات في الرياض والمنطقة الوسطى</p>
-                </div>
-                
-                <div class="location-card">
-                    <i class="fas fa-umbrella-beach"></i>
-                    <h3>جدة</h3>
-                    <p>خدمة تأجير كراسي وطاولات في جدة والمنطقة الغربية</p>
-                </div>
-            </div>
-        </div>
+
+    <!-- معرض صور كبير -->
+    <section style="margin-top:20px">
+      <h2>معرض الصور — نماذج من معداتنا</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin-top:8px">
+        <img src="https://i.postimg.cc/dVN4fLFp/IMG-2309.jpg" alt="كنب مفرد" />
+        <img src="https://i.postimg.cc/2y90KBtP/IMG-2371.jpg" alt="كنب ثلاثي" />
+        <img src="https://i.postimg.cc/Gh7pXhmG/5efdb91c-9d74-4dcf-a0a5-86cbfc1a9aa4.jpg" alt="طاولات وكراسي" />
+        <img src="https://i.postimg.cc/J7dwgyjr/c60ae1e5-6514-4989-9c1b-ddf978c41be4.jpg" alt="سماعات وصوت" />
+        <img src="https://i.postimg.cc/PryQ5ZrZ/IMG-2316.jpg" alt="جلسات مغربية" />
+        <img src="https://i.postimg.cc/vBvtx6Lp/46d351d7-91d2-4d35-8424-f4342844f1c6.jpg" alt="دفايات" />
+        <img src="https://i.postimg.cc/63RdJbQV/b3168f60-5a8a-49be-a705-45da4fcf5726.jpg" alt="خيام" />
+      </div>
+      <p class="meta">ملاحظة: تقدر تستبدل الصور بسرعة — ارفع الصور اللي عندك وسأرُكّبها مكان الصور الحالية.</p>
     </section>
-    
-    <!-- قسم العملاء -->
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">آراء عملائنا</h2>
-            
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"تعاملت معهم في حفل زفافي وكانت الخدمة ممتازة، الكراسي والطاولات كانت فاخرة وأنيقة، والتنظيم كان محترفًا."</p>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="عميل">
-                        <div class="author-info">
-                            <h4>أحمد السليم</h4>
-                            <p>مناسبة زفاف</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"نظمنا مؤتمرًا لـ 500 شخص ووفرت الشركة جميع الاحتياجات من كراسي وطاولات وأجهزة صوت وإضاءة بجودة عالية."</p>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="عميلة">
-                        <div class="author-info">
-                            <h4>سارة العبدالله</h4>
-                            <p>مؤتمر شركة</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"جلساتهم الشعبية والمغربية رائعة، وأنصح أي شخص يقيم مناسبة أن يتعامل معهم، الخدمة سريعة والجودة ممتازة."</p>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="عميل">
-                        <div class="author-info">
-                            <h4>خالد الفهد</h4>
-                            <p>حفل عائلي</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <!-- اسئلة شائعة واسعة وغنية -->
+    <section class="faq" style="margin-top:20px">
+      <h2>الأسئلة الشائعة — تأجير مستلزمات الحفلات</h2>
+      <details>
+        <summary>كيف أحجز خدمة تأجير الكراسي والطاولات؟</summary>
+        <div style="padding-top:8px">أرسل رسالة واتساب أو اتصل 0559534118 مع التاريخ، عدد الضيوف، ونوع المعدات المطلوبة وسيصلك عرض سعر مفصّل.</div>
+      </details>
+      <details>
+        <summary>هل يوجد تأمين على الأثاث؟</summary>
+        <div style="padding-top:8px">نوصي بتأمين بسيط للحوادث الكبيرة، ولكن نسعى دائمًا لتسليم معدات نظيفة وبحالة ممتازة.</div>
+      </details>
+      <details>
+        <summary>ما هي مدة الحجز القياسية؟</summary>
+        <div style="padding-top:8px">المدة الافتراضية يوم واحد (ليلة/يوم) ويمكن تمديدها بحسب الاتفاق. للحجوزات الطويلة قد نعرض أسعار خاصة.</div>
+      </details>
+      <details>
+        <summary>هل توفرون تركيب وإزالة بعد الحدث؟</summary>
+        <div style="padding-top:8px">نعم، خدمة التوصيل والتركيب والفك متوفرة ويمكن إضافتها في عرض السعر.</div>
+      </details>
+      <details>
+        <summary>هل تقدمون خصومات للفعاليات الكبيرة؟</summary>
+        <div style="padding-top:8px">نعم، نوفر خصومات وحلول باقات للفعاليات الكبيرة والمؤسسات.</div>
+      </details>
     </section>
-    
-    <!-- الفوتر -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>عن الشركة</h3>
-                    <p>متخصصون في تأجير كراسي وطاولات ومستلزمات المناسبات منذ أكثر من 10 سنوات. نقدم خدماتنا في جميع أنحاء المملكة.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-snapchat"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>خدماتنا</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">تأجير كراسي</a></li>
-                        <li><a href="#">تأجير طاولات</a></li>
-                        <li><a href="#">تأجير كنب</a></li>
-                        <li><a href="#">تأجير أجهزة صوت وإضاءة</a></li>
-                        <li><a href="#">تأجير جلسات</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>روابط سريعة</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">الرئيسية</a></li>
-                        <li><a href="#">خدماتنا</a></li>
-                        <li><a href="#">معرض الأعمال</a></li>
-                        <li><a href="#">مناطق الخدمة</a></li>
-                        <li><a href="#">اتصل بنا</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>اتصل بنا</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> الدمام، المملكة العربية السعودية</p>
-                    <p><i class="fas fa-phone"></i> 966123456789+</p>
-                    <p><i class="fab fa-whatsapp"></i> 966123456789+</p>
-                    <p><i class="fas fa-envelope"></i> info@example.com</p>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>© 2023 تأجير الكراسي والطاولات. جميع الحقوق محفوظة</p>
-            </div>
-        </div>
-    </footer>
+
+    <!-- دعوة فعلية للحجز -->
+    <section style="margin-top:22px;text-align:center">
+      <h2>احجز الآن — تأجير كنب وطاولات وكراسي</h2>
+      <p class="meta">اتصل او أرسل واتساب: 0559534118 لحجز أي من الخدمات: تاجير كنب مفرد، تاجير كنب ثلاثي، تاجير طاولات وكراسي، تاجير جلسات، تاجير سماعات، تاجير مكيفات، تاجير دفايات، تاجير خيام.</p>
+      <a class="btn btn-call" href="tel:0559534118">اتصل الآن 0559534118</a>
+      <a class="btn btn-wa" href="https://wa.me/966559534118">واتساب</a>
+    </section>
+
+
+
 </body>
 </html>
