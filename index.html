@@ -3,338 +3,252 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>اللمسة الذهبية - تأجير جلسات وكراسي وطاولات ومستلزمات حفلات متكاملة</title>
-  <meta name="description" content="اللمسة الذهبية لتأجير مستلزمات الحفلات والمناسبات: جلسات شعبية ومغربية، كنب فاخر، كراسي وطاولات، سجاد، إضاءات وليزر، سماعات ومكيفات — خدمات توصيل وتركيب ومتابعة. اتصل 0559534118">
-  <meta name="keywords" content="تأجير جلسات شعبية, تأجير كنب فاخر, تأجير كراسي وطاولات, تأجير سجاد وممرات, تأجير إضاءة وليزر, تأجير سماعات, تأجير مكيفات, تجهيز مناسبات, تأجير قهوجيين, تأجير صبابين, كراسي ملكية للتأجير, تأجير طاولات قزاز">
+  <title>خدمات تأجير المناسبات والفعاليات - كنب، طاولات، كراسي، مكيفات، مسارح</title>
+  <meta name="description" content="تأجير مستلزمات الحفلات والمناسبات: كنب، طاولات، كراسي، جلسات شعبية، سجاد، إضاءة، سماعات، مسارح، مكيفات، وركن ضيافة. أفضل الحلول لجميع فعالياتك.">
+  <meta name="keywords" content="تأجير مستلزمات المناسبات, تأجير كنب للمناسبات, تأجير طاولات وكراسي, تأجير معدات حفلات, تأجير سماعات, تأجير مسارح, تأجير مكيفات متنقلة, جلسات شعبية للإيجار, خدمات ضيافة, قهوجيين وصبابين">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    :root{
-      --brand1:#0b3d91; /* deep blue */
-      --accent:#f0b429; /* gold */
-      --muted:#666;
-      --card:#ffffff;
-      --page-bg: linear-gradient(180deg,#f6f8fb 0%, #ffffff 100%);
+    :root {--primary-color: #5d5cff; --secondary-color: #f7f9fc; --text-color: #333;}
+    body {font-family: 'Tajawal', sans-serif; background-color: #f0f4f7; color: var(--text-color);}
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+    
+    .header-banner {
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.postimg.cc/85zC9G5X/event-bg-2.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 80px 15px;
+      border-radius: 12px;
+      margin-top: 20px;
+      position: relative;
     }
-    html,body{height:100%}
-    body{font-family: "Segoe UI", Tahoma, Arial, sans-serif; background:var(--page-bg); color:#1c1c1c; -webkit-font-smoothing:antialiased}
-    /* Top bar */
-    .topbar{background:var(--brand1); color:#fff; padding:8px 12px; border-radius:0 0 8px 8px}
-    .topbar a{color:#fff; text-decoration:none}
-    .brand{font-weight:700; letter-spacing:0.4px}
-    /* Hero */
-    .hero{
-      background: linear-gradient(90deg, rgba(11,61,145,0.06), rgba(240,180,41,0.03));
-      margin-top:18px; padding:36px; border-radius:14px;
-      box-shadow:0 10px 30px rgba(11,61,145,0.04);
+    .header-banner h1 {font-size: 3rem; font-weight: 700; margin-bottom: 10px;}
+    .header-banner p {font-size: 1.25rem;}
+    
+    .contact-buttons {position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);}
+    .btn-contact {font-size: 1.1rem; padding: 10px 25px; margin: 0 5px; border-radius: 50px;}
+    
+    .section {padding: 50px 0;}
+    .service-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      padding: 30px;
+      margin-bottom: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .hero .title{font-size:30px; color:var(--brand1); font-weight:800}
-    .hero .subtitle{color:var(--muted); margin-top:8px}
-    .cta-btn{background:var(--accent); color:#1c1c1c; font-weight:700; border-radius:10px; padding:10px 18px; box-shadow:0 6px 16px rgba(240,180,41,0.18); border:0}
-    .contact-floating{position:fixed; left:18px; bottom:18px; z-index:9999}
-    .contact-floating a{display:block; margin-top:8px; width:56px; height:56px; border-radius:50%; background:#fff; box-shadow:0 8px 20px rgba(0,0,0,0.12); display:flex; align-items:center; justify-content:center}
-    /* Sections */
-    .section{padding:36px 12px}
-    .card-service{background:var(--card); border-radius:12px; padding:18px; box-shadow:0 8px 24px rgba(15,23,36,0.04); margin-bottom:18px}
-    .service-gallery img{width:100%; height:140px; object-fit:cover; border-radius:8px}
-    .badge-key{background:rgba(11,61,145,0.06); color:var(--brand1); padding:6px 10px; border-radius:8px; font-size:13px; margin-left:6px}
-    .keywords-dense{background:#fff7e6; border-radius:8px; padding:10px; color:#6b4b12; font-size:14px}
-    footer{background:var(--brand1); color:#fff; padding:28px; border-radius:12px; margin-top:28px}
-    .faq .accordion-button{direction:rtl}
-    @media(min-width:768px){ .hero .title{font-size:38px} }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    .service-card h3 {color: var(--primary-color); font-weight: 700;}
+    .service-card p {line-height: 1.8;}
+    
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {transform: scale(1.05);}
+    
+    .faq-section .accordion-item {
+      border: none;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+    .faq-section .accordion-button {
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+      font-weight: 700;
+      border-radius: 8px !important;
+    }
+    .faq-section .accordion-body {
+      background-color: #fff;
+      border: 1px solid #e9ecef;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+    }
+    
+    footer {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 40px 0;
+      text-align: center;
+    }
+    footer a {color: #fff; text-decoration: none;}
+    footer a:hover {text-decoration: underline;}
   </style>
-
-  <!-- structured data -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"اللمسة الذهبية - تأجير مستلزمات الحفلات",
-    "image":["https://i.postimg.cc/dVN4fLFp/IMG-2309.jpg","https://i.postimg.cc/2y90KBtP/IMG-2371.jpg"],
-    "telephone":"+966559534118",
-    "address":{"@type":"PostalAddress","addressCountry":"SA"},
-    "description":"خدمة متكاملة لتأجير جلسات شعبية ومغربية، كنب فاخر، كراسي وطاولات، سجاد، إضاءات وليزر، سماعات، مسارح ومكيفات للمناسبات.",
-    "priceRange":"متوسط",
-    "url":"#"
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "الاحترافية لتأجير مستلزمات الحفلات",
+    "telephone": "+966559534118",
+    "description": "حلول متكاملة لتأجير كنب، كراسي، طاولات، جلسات شعبية، مكيفات، إضاءة، مسارح وغيرها من مستلزمات المناسبات والفعاليات.",
+    "address": {"@type":"PostalAddress","addressCountry":"SA"}
   }
   </script>
 </head>
 <body>
 
-  <div class="container">
-    <!-- topbar -->
-    <div class="topbar d-flex align-items-center justify-content-between mt-3">
-      <div class="d-flex align-items-center gap-3">
-        <div class="brand">اللمسة الذهبية</div>
-        <div class="small" style="opacity:.9">تأجير مستلزمات الحفلات والمناسبات — خدمات محترفة</div>
+<header class="container">
+  <div class="header-banner text-center">
+    <h1>الاحترافية لخدمات المناسبات والفعاليات</h1>
+    <p class="lead">حلول متكاملة لتأجير جميع مستلزمات حفلتك: من الكنب الفاخر إلى أحدث أنظمة الصوت والإضاءة.</p>
+    <div class="contact-buttons">
+      <a href="https://wa.me/966559534118" target="_blank" class="btn btn-success btn-lg btn-contact"><i class="fa-brands fa-whatsapp"></i> تواصل واتساب</a>
+      <a href="tel:0559534118" class="btn btn-outline-light btn-lg btn-contact"><i class="fa-solid fa-phone"></i> اتصال مباشر</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="section">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="service-card h-100">
+          <h2>خبرة تمتد لسنوات في تأجير مستلزمات الحفلات</h2>
+          <p>
+            نحن نقدم خدمات تأجير شاملة ومبتكرة لمختلف المناسبات. سواء كنت تخطط لزواج، حفل تخرج، مؤتمر عمل، أو أي فعالية خاصة، لدينا كل ما تحتاجه لإنجاحها. خدماتنا تشمل تأجير الكنب الفاخر، تأجير الكراسي والطاولات بجميع أنواعها، تأجير الجلسات الشعبية والأرضية، وتأجير أحدث معدات الصوت والإضاءة.
+          </p>
+          <p>
+            نحن نضمن جودة عالية في كل قطعة نقدمها، مع خدمات توصيل وتركيب محترفة لضمان راحتك. شعارنا هو الاهتمام بأدق التفاصيل لتجربة لا تُنسى.
+          </p>
+          <p class="text-muted small mt-3">
+            كلمات مفتاحية: تأجير مستلزمات الحفلات، تأجير معدات المناسبات، تجهيز فعاليات، تأجير أثاث للمناسبات، خدمات حفلات، تخطيط فعاليات، تأجير معدات حفلات.
+          </p>
+        </div>
       </div>
-      <div class="d-flex align-items-center gap-2">
-        <a href="tel:0559534118" class="btn btn-sm btn-light"><i class="fa-solid fa-phone"></i> 0559534118</a>
-        <a href="https://wa.me/966559534118" target="_blank" class="btn btn-sm" style="background:#25d366;color:#fff;border-radius:8px"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+      <div class="col-md-6 gallery">
+        <div class="row g-3">
+          <div class="col-6"><img src="https://i.postimg.cc/mD8zQ19N/IMG-2298.jpg" alt="كنب للمناسبات"></div>
+          <div class="col-6"><img src="https://i.postimg.cc/3wW4Kj4Y/IMG-2299.jpg" alt="طاولات وكراسي للحفلات"></div>
+          <div class="col-6"><img src="https://i.postimg.cc/85zC9G5X/event-bg-2.jpg" alt="تجهيزات حفلات"></div>
+          <div class="col-6"><img src="https://i.postimg.cc/qRpF2F3m/IMG-2309.jpg" alt="طاولات حفلات"></div>
+        </div>
       </div>
     </div>
+  </section>
+  
+  <hr>
 
-    <!-- hero -->
-    <header class="hero mt-3">
-      <div class="row align-items-center">
-        <div class="col-12 col-md-7">
-          <div class="title">تجهيز حفلات متكاملة — جلسات، طاولات، كنب، وإضاءة باحتراف</div>
-          <p class="subtitle">نقدّم باقات متكاملة لتأجير مستلزمات الحفلات والمناسبات: جلسات شعبية ومغربية، تأجير كنب فاخر، تأجير كراسي وطاولات، سجاد ممرات، إضاءات وليرز، أنظمة صوت ومكيفات.</p>
-          <div class="d-flex gap-2 mt-3">
-            <a href="#packages" class="cta-btn">اطلب عرض مناسب</a>
-            <a href="#services" class="btn btn-outline-secondary" style="border-radius:10px; padding:10px 16px">عرض الخدمات</a>
-          </div>
-          <div class="mt-3 keywords-dense">كلمات مفتاحية مهمة: تأجير جلسات شعبية، تأجير كنب فاخر، تأجير كراسي وطاولات، تجهيز مناسبات، تأجير سجاد، تأجير إضاءة، تأجير سماعات ومكبرات.</div>
-        </div>
-        <div class="col-12 col-md-5">
-          <div class="row g-2">
-            <div class="col-6"><img src="https://i.postimg.cc/63RdJbQV/b3168f60-5a8a-49be-a705-45da4fcf5726.jpg" alt="جلسة مغربية" class="rounded w-100"></div>
-            <div class="col-6"><img src="https://i.postimg.cc/W3y7TP2y/IMG-2310.jpg" alt="طاولات وكراسي" class="rounded w-100"></div>
-            <div class="col-12 mt-2"><img src="https://i.postimg.cc/Gh7pXhmG/5efdb91c-9d74-4dcf-a0a5-86cbfc1a9aa4.jpg" alt="كنب فاخر" class="rounded w-100"></div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- why choose us -->
-    <section class="section" id="why">
-      <div class="card-service">
-        <h3>ليه تختار اللمسة الذهبية؟</h3>
-        <ul>
-          <li>خبرة طويلة في تجهيز الحفلات والمناسبات — تأجير طاولات وكراسي وتأجير كنب وتأمين كل الاحتياجات.</li>
-          <li>توصيل وتركيب محترف مع ضمان جودة ونظافة الأثاث قبل التسليم.</li>
-          <li>باقات مرنة وأسعار تنافسية وخصومات للفعاليات الكبيرة والجهات المتعاقدة.</li>
-          <li>دعم فني أثناء الفعالية، وتأجير قهوجيين وصبابين عند الطلب.</li>
-        </ul>
-        <p class="mb-0"><strong>نكرر كلمات مفيدة للسيو:</strong> تأجير طاولات وكراسي، تأجير كنب، تأجير جلسات شعبية، تأجير سجاد، تأجير إضاءة، تأجير سماعات.</p>
-      </div>
-    </section>
-
-    <!-- services (reordered: جلسات -> كراسي -> كنب -> معدات) -->
-    <section class="section" id="services">
-      <h2 class="mb-3">خدماتنا الرئيسية</h2>
-
-      <!-- جلسات شعبية ومغربية -->
-      <div class="card-service row align-items-center">
-        <div class="col-12 col-md-7">
-          <h4>تأجير جلسات شعبية ومغربية — جلسات مرتفعة وأرضية</h4>
+  <section class="section">
+    <h2 class="text-center mb-5" style="color: var(--primary-color); font-weight: 700;">خدماتنا المتخصصة</h2>
+    <div class="row g-4">
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <h3>تأجير أثاث المناسبات</h3>
           <p>
-            نوفر تشكيلة واسعة من الجلسات الشعبية والمغربية بتصاميم تقليدية وعصرية: جلسات أرضية بالألوان التقليدية، جلسات مغربية مرتفعة مع وسائد فخمة ومفارش أنيقة. تناسب الأعراس، حفلات الخطوبة، وتجهيز الاستراحات.
+            نوفر مجموعة واسعة من أثاث المناسبات يشمل *تأجير كنب ملكي، **تأجير كنب مودرن، **تأجير طاولات طعام دائرية، **تأجير طاولات قزاز، **تأجير كراسي للعرسان، **تأجير كراسي للحفلات* وغيرها. كل قطعة مصممة لإضافة لمسة أناقة وراحة لفعاليتك.
           </p>
-          <p><strong>تفاصيل الخدمة:</strong> توصيل، تركيب، وتنسيق داخل موقعك. خدمة تنظيف وصيانة بعد الاستخدام.</p>
-          <p class="mb-2"><span class="badge-key">كلمات مفتاحية:</span> تأجير جلسات شعبية، تأجير جلسات مغربية، جلسات أرضية، تجهيز مجلس.</p>
-          <div>
-            <a href="tel:0559534118" class="btn btn-sm btn-outline-primary me-2"><i class="fa-solid fa-phone"></i> اتصال</a>
-            <a href="https://wa.me/966559534118" target="_blank" class="btn btn-sm" style="background:var(--accent); color:#000">واتساب</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-5 service-gallery">
-          <div class="row g-2">
-            <div class="col-6"><img src="https://i.postimg.cc/v8f1Q6tz/IMG-2083.png" alt="جلسة 1"></div>
-            <div class="col-6"><img src="https://i.postimg.cc/QCtnqrmN/30c62dd9-e62e-40b9-9521-0b02920d9691.jpg" alt="جلسة 2"></div>
-            <div class="col-12 mt-2"><img src="https://i.postimg.cc/kXBd7YGF/IMG-2564.jpg" alt="جلسة 3"></div>
-          </div>
         </div>
       </div>
-
-      <!-- كراسي وطاولات -->
-      <div class="card-service row align-items-center">
-        <div class="col-12 col-md-5 service-gallery">
-          <div class="row g-2">
-            <div class="col-6"><img src="https://i.postimg.cc/PryQ5ZrZ/IMG-2316.jpg" alt="كرسي 1"></div>
-            <div class="col-6"><img src="https://i.postimg.cc/cLKtG8Kd/IMG-2304.jpg" alt="طاولة 1"></div>
-            <div class="col-12 mt-2"><img src="https://i.postimg.cc/Fzg8RR7R/IMG-2299.jpg" alt="كرسي 2"></div>
-          </div>
-        </div>
-        <div class="col-12 col-md-7">
-          <h4>تأجير كراسي وطاولات — جميع الأنواع للأعراس والفعاليات</h4>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <h3>تأجير الجلسات الشعبية</h3>
           <p>
-            توفر مجموعتنا كراسي فولاذية وخشبية ومخملية، وكراسي ملكية للمناسبات الفاخرة. الطاولات دائرية ومستطيلة وطاولات قزاز للمآدب والبوفيهات. نلبي احتياج القاعات والفنادق والفعاليات العامة.
+            لإضفاء طابع تقليدي ودافئ، نقدم *تأجير جلسات شعبية* و*تأجير جلسات مغربية، بالإضافة إلى **جلسات أرضية* مريحة ومناسبة للمناسبات العائلية والتجمعات الخاصة.
           </p>
-          <p><strong>نكرر:</strong> تأجير كراسي وطاولات، كراسي ملكية، طاولات قزاز، طاولات طعام، تأجير طاولات ومقاعد للمناسبات.</p>
-          <div>
-            <a href="tel:0559534118" class="btn btn-sm btn-outline-primary me-2"><i class="fa-solid fa-phone"></i> اتصال</a>
-            <a href="https://wa.me/966559534118" target="_blank" class="btn btn-sm" style="background:var(--accent); color:#000">واتساب</a>
-          </div>
         </div>
       </div>
-
-      <!-- كنب -->
-      <div class="card-service row align-items-center">
-        <div class="col-12 col-md-7">
-          <h4>تأجير كنب فاخر — ملكي وعصري بجودة عالية</h4>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <h3>أنظمة الصوت والإضاءة والمسارح</h3>
           <p>
-            جلسات كنب أنيقة للعرسان والضيوف، تصاميم ملكية ومودرن وأقمشة مقاومة للبقع. الكنب متوفر بأحجام ومجموعات مختلفة (مجموعة 3+2+1، أركان زاوية، أرائك مفردة). الخدمة تشمل التركيب والتنسيق.
+            نقدم حلولًا متكاملة من *تأجير سماعات احترافية، **تأجير عقود إضاءة، وتأجير ليزرات* لإضفاء جو مميز على الحفل. كما نوفر *تأجير مسارح وشاشات عرض* للفعاليات الكبيرة والمؤتمرات.
           </p>
-          <p class="mb-2"><span class="badge-key">ملاحظات للسيو:</span> تأجير كنب، كنب ملكي، كنب للعرسان، تأجير أريكة للمناسبات.</p>
-          <div>
-            <a href="tel:0559534118" class="btn btn-sm btn-outline-primary me-2"><i class="fa-solid fa-phone"></i> اتصال</a>
-            <a href="https://wa.me/966559534118" target="_blank" class="btn btn-sm" style="background:var(--accent); color:#000">واتساب</a>
-          </div>
         </div>
-        <div class="col-12 col-md-5 service-gallery">
-          <div class="row g-2">
-            <div class="col-6"><img src="https://i.postimg.cc/J7dwgyjr/c60ae1e5-6514-4989-9c1b-ddf978c41be4.jpg" alt="كنب 1"></div>
-            <div class="col-6"><img src="https://i.postimg.cc/zBCQfBcQ/IMG-2374.jpg" alt="كنب 2"></div>
-            <div class="col-12 mt-2"><img src="https://i.postimg.cc/6pQx1dmp/IMG-2375.jpg" alt="كنب 3"></div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <h3>تأجير أنظمة التكييف</h3>
+          <p>
+            لضمان راحة الحضور في الأجواء الحارة، نوفر *تأجير مكيفات* متنقلة و*أنظمة تبريد* قوية وفعالة مناسبة للصالات المفتوحة والفعاليات الخارجية.
+          </p>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <h3>تأجير السجاد والمدخل</h3>
+          <p>
+            تأجير *سجاد ممرات* و*سجاد استقبال* بألوان وتصاميم مختلفة لإضافة لمسة من الفخامة والترتيب لمدخل حفلتك.
+          </p>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <h3>خدمات الضيافة</h3>
+          <p>
+            لدينا فريق مختص لتقديم الضيافة، يشمل *تأجير ركن ضيافة متكامل* مع *تأجير قهوجيين وصبابين* محترفين لخدمة ضيوفك بأعلى مستوى.
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="section faq-section">
+    <h2 class="text-center mb-4" style="color: var(--primary-color); font-weight: 700;">أسئلة متكررة</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            ما هي المناطق التي تغطونها بخدمات التأجير؟
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            نحن نخدم مدينة الرياض والمناطق المحيطة بها. يرجى التواصل معنا للتأكد من تغطية موقعك.
           </div>
         </div>
       </div>
-
-      <!-- سجاد وإضاءة وصوت ومكيفات -->
-      <div class="card-service">
-        <h4>معدات وتقنيات — سجاد، إضاءة، صوت ومكيفات</h4>
-        <p>
-          تأجير سجاد للممرات والمناطق المركزية، عقود إضاءة وليزر لخلق أجواء احتفالية، أنظمة صوت احترافية وسماعات دي جي، ومكيفات متنقلة (مكيفات صحراوية ومجمعات تبريد) للمناسبات الخارجية.
-        </p>
-        <p><strong>نقاط تقنية سريعة:</strong> نوصي بمكيف صحراوي 5000 CFM لمساحة ~50 متر مربع؛ لمواقع أكبر نستخدم 9000-12000 CFM. نوفر تركيب وتشغيل خلال الفعالية.</p>
-        <div>
-          <a href="tel:0559534118" class="btn btn-sm btn-outline-primary me-2"><i class="fa-solid fa-phone"></i> اتصال</a>
-          <a href="https://wa.me/966559534118" target="_blank" class="btn btn-sm" style="background:var(--accent); color:#000">واتساب</a>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- packages / عروض -->
-    <section class="section" id="packages">
-      <h2>باقات جاهزة ومخصصة</h2>
-      <div class="row g-3">
-        <div class="col-12 col-md-4">
-          <div class="card-service">
-            <h5>باقة التأسيس</h5>
-            <p>جلسة شعبية + 20 كرسي + 4 طاولات + سجاد ممر + إضاءة بسيطة.</p>
-            <p><strong>مثالي لـ</strong> مناسبات صغيرة واجتماعات عائلية.</p>
-            <a href="tel:0559534118" class="btn btn-sm btn-outline-primary">اطلب هذه الباقة</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="card-service">
-            <h5>باقة العرس</h5>
-            <p>كنب للعروسين + 80 كرسي + 12 طاولة + سجاد ممرات + نظام صوت متوسط + إضاءة احترافية.</p>
-            <p><strong>مثالي لـ</strong> حفلات الزفاف والمناسبات الكبيرة.</p>
-            <a href="tel:0559534118" class="btn btn-sm btn-outline-primary">احجز الآن</a>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="card-service">
-            <h5>باقة الشركات</h5>
-            <p>مسرح متكامل + شاشات عرض + نظام صوت قوي + مقاعد مرتبة + إضاءة مسرحية.</p>
-            <p><strong>مثالي لـ</strong> مؤتمرات وفعاليات شركات.</p>
-            <a href="tel:0559534118" class="btn btn-sm btn-outline-primary">اطلب عرض سعر</a>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            هل يمكنني تأجير قطعة واحدة فقط؟
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            نعم، يمكننا تأجير أي عدد من القطع التي تحتاجها، من قطعة واحدة إلى تجهيز حفل كامل.
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- gallery (different arrangement) -->
-    <section class="section">
-      <h2>معرض صور مُحدّث</h2>
-      <div class="row g-2">
-        <div class="col-6 col-md-3"><img src="https://i.postimg.cc/dVN4fLFp/IMG-2309.jpg" alt="صور معرض 1" class="rounded"></div>
-        <div class="col-6 col-md-3"><img src="https://i.postimg.cc/2y90KBtP/IMG-2371.jpg" alt="صور معرض 2" class="rounded"></div>
-        <div class="col-6 col-md-3"><img src="https://i.postimg.cc/vmk1m8V5/IMG-2373.jpg" alt="صور معرض 3" class="rounded"></div>
-        <div class="col-6 col-md-3"><img src="https://i.postimg.cc/W3y7TP2y/IMG-2310.jpg" alt="صور معرض 4" class="rounded"></div>
-        <div class="col-6 col-md-3"><img src="https://i.postimg.cc/Gh7pXhmG/5efdb91c-9d74-4dcf-a0a5-86cbfc1a9aa4.jpg" alt="صور معرض 5" class="rounded"></div>
-        <div class="col-6 col-md-3"><img src="https://i.postimg.cc/J7dwgyjr/c60ae1e5-6514-4989-9c1b-ddf978c41be4.jpg" alt="صور معرض 6" class="rounded"></div>
-        <div class="col-6 col-md-3"><img src="https://i.postimg.cc/zBCQfBcQ/IMG-2374.jpg" alt="صور معرض 7" class="rounded"></div>
-        <div class="col-6 col-md-3"><img src="https://i.postimg.cc/6pQx1dmp/IMG-2375.jpg" alt="صور معرض 8" class="rounded"></div>
-      </div>
-    </section>
-
-    <!-- FAQ expanded -->
-    <section class="section faq">
-      <h2>الأسئلة الشائعة</h2>
-      <div class="accordion" id="faq2">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="fq1">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fa1">كيف أحجز باقة؟</button>
-          </h2>
-          <div id="fa1" class="accordion-collapse collapse" data-bs-parent="#faq2">
-            <div class="accordion-body">اتصل بالرقم 0559534118 أو تواصل عبر الواتساب. نحتاج تاريخ المناسبة، عدد الضيوف، نوع الجلسة المرغوبة، ومكان التوصيل. نرسل لك عرض سعر ووقت التركيب.</div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            ما هي المدة المتاحة للتأجير؟
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            نقدم خيارات تأجير متنوعة تشمل التأجير اليومي، الأسبوعي، أو لفترات أطول حسب طبيعة المناسبة واحتياجاتك.
           </div>
         </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="fq2">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fa2">هل توجد خدمة تركيب واستلام؟</button>
-          </h2>
-          <div id="fa2" class="accordion-collapse collapse" data-bs-parent="#faq2">
-            <div class="accordion-body">نعم — فريقنا يقوم بالتركيب قبل بدء المناسبة ويستلم بعد الانتهاء. تكلفة التوصيل تحدد حسب المسافة ونوع الخدمة.</div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="fq3">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fa3">ما شروط التأمين أو الضمان؟</button>
-          </h2>
-          <div id="fa3" class="accordion-collapse collapse" data-bs-parent="#faq2">
-            <div class="accordion-body">نطلب تأمين بسيط على تجهيزات معينة للحفاظ على الجودة. في حالات التلف الناتج عن الإهمال قد تُحتسب رسوم. التفاصيل تكون مذكورة في العقد أو الاتفاق الكتابي.</div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="fq4">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fa4">كم مساحة يغطّي مكيف صحراوي 5000 CFM؟</button>
-          </h2>
-          <div id="fa4" class="accordion-collapse collapse" data-bs-parent="#faq2">
-            <div class="accordion-body">كمثال تقريبي: مكيف صحراوي 5000 CFM يغطي حوالي 40-60 متر مربع (بحسب العزل والطقس وعدد الأشخاص). للفعاليات الكبيرة ننصح بدمج أكثر من جهاز أو استخدام وحدات أكبر (9000-12000 CFM).</div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="fq5">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fa5">هل تقدمون خدمات قهوجيين وصبابين؟</button>
-          </h2>
-          <div id="fa5" class="accordion-collapse collapse" data-bs-parent="#faq2">
-            <div class="accordion-body">نعم، يمكن إضافة ركن ضيافة متكامل مع طاقم قهوجيين وصبابين. السعر يعتمد على مدة الخدمة وعدد الأفراد.</div>
-          </div>
-        </div>
-
       </div>
-    </section>
+    </div>
+  </section>
+  
+</main>
 
-    <!-- testimonials + blog snippets -->
-    <section class="section">
-      <div class="card-service">
-        <h3>تجارب عملائنا</h3>
-        <blockquote>"تعامل سريع وتركيب ممتاز — حفلة ما شاء الله كانت منسقة بفضل اللمسة الذهبية." — سارة (الرياض)</blockquote>
-        <blockquote>"الكنب كان نظيف وفخم، والأسعار مناسبة. أنصحهم لأي شخص يبغى تجهيز فعالية." — خالد</blockquote>
-      </div>
-
-      <div class="card-service mt-3">
-        <h3>نصائح سريعة من خبرائنا</h3>
-        <ol>
-          <li>لحفلات الصيف الخارجية استخدم مكيفات صحراوية 5000 CFM لكل 50 متر مربع تقريبا.</li>
-          <li>ضع سجاد الممرات قبل تركيب الكنب ليتماشى الشكل العام للمناسبة.</li>
-          <li>اطلب إشراف تركيب إن كانت الفعالية كبيرة لتفادي أخطاء توزيع المقاعد والإضاءة.</li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- contact & footer -->
-    <footer class="mt-4">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <h4>تواصل معنا</h4>
-          <p>للأسعار والحجوزات: <a href="tel:0559534118" style="color:#fff; text-decoration:underline">0559534118</a> — واتساب: <a href="https://wa.me/966559534118" target="_blank" style="color:#fff; text-decoration:underline">اضغط هنا</a></p>
-          <p>العنوان: خدمات توصيل وتركيب داخل السعودية. مواعيد العمل: 8 صباحًا - 11 مساءً.</p>
-        </div>
-        <div class="col-12 col-md-6 text-md-start">
-          <p>© كل الحقوق محفوظة — اللمسة الذهبية لتأجير مستلزمات الحفلات والمناسبات.</p>
-          <p style="opacity:.85">صفحة مُحسّنة SEO بمحتوى متنوع وكلمات مفتاحية مميزة لتفادي التكرار مع صفحات أخرى.</p>
-        </div>
-      </div>
-    </footer>
-
+<footer class="mt-5">
+  <div class="container">
+    <p>جميع الحقوق محفوظة © الاحترافية لخدمات المناسبات. للتواصل: <a href="tel:0559534118">0559534118</a></p>
   </div>
+</footer>
 
-  <!-- floating contact -->
-  <div class="contact-floating">
-    <a href="tel:0559534118" aria-label="اتصال"><i class="fa-solid fa-phone"></i></a>
-    <a href="https://wa.me/966559534118" target="_blank" aria-label="واتساب" style="margin-top:10px"><i class="fa-brands fa-whatsapp"></i></a>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
