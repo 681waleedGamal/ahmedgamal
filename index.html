@@ -1,254 +1,637 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>خدمات تأجير المناسبات والفعاليات - كنب، طاولات، كراسي، مكيفات، مسارح</title>
-  <meta name="description" content="تأجير مستلزمات الحفلات والمناسبات: كنب، طاولات، كراسي، جلسات شعبية، سجاد، إضاءة، سماعات، مسارح، مكيفات، وركن ضيافة. أفضل الحلول لجميع فعالياتك.">
-  <meta name="keywords" content="تأجير مستلزمات المناسبات, تأجير كنب للمناسبات, تأجير طاولات وكراسي, تأجير معدات حفلات, تأجير سماعات, تأجير مسارح, تأجير مكيفات متنقلة, جلسات شعبية للإيجار, خدمات ضيافة, قهوجيين وصبابين">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>لمسة ذهبية لتأجير مستلزمات الحفلات والمناسبات - طاولات، كراسي، كنب، كوش، جلسات</title>
+  <meta name="application-name" content="لمسة ذهبية للمناسبات">
+  <meta name="description" content="نوفر في لمسة ذهبية خدمات تأجير طاولات، كراسي، كنب فاخر، كوش أفراح، جلسات شعبية ومغربية، مكيفات، ومكبرات صوت في الرياض، جدة، الدمام والخبر بأسعار تنافسية مع خدمة توصيل وتركيب سريعة.">
+  
+  <link rel="canonical" href="https://www.lamsa-gold.store/" />
   <style>
-    :root {--primary-color: #5d5cff; --secondary-color: #f7f9fc; --text-color: #333;}
-    body {font-family: 'Tajawal', sans-serif; background-color: #f0f4f7; color: var(--text-color);}
-    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
-    
-    .header-banner {
-      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.postimg.cc/85zC9G5X/event-bg-2.jpg');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      padding: 80px 15px;
-      border-radius: 12px;
-      margin-top: 20px;
-      position: relative;
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+    * {
+      margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif;
     }
-    .header-banner h1 {font-size: 3rem; font-weight: 700; margin-bottom: 10px;}
-    .header-banner p {font-size: 1.25rem;}
-    
-    .contact-buttons {position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);}
-    .btn-contact {font-size: 1.1rem; padding: 10px 25px; margin: 0 5px; border-radius: 50px;}
-    
-    .section {padding: 50px 0;}
-    .service-card {
-      background-color: #fff;
+    body {
+      background: linear-gradient(135deg, #f5f5f5, #e6e6e6); /* تغيير لون الخلفية */
+      color: #222; line-height: 1.6; min-height: 100vh;
+      padding-bottom: 40px;
+    }
+    a {
+      color: #1a73e8; text-decoration: none; transition: color 0.3s ease;
+    }
+    a:hover { color: #004c91; }
+    header {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 15px 20px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+      position: sticky; top: 0; z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 2px solid #d4a017;
+      user-select: none;
+    }
+    header .logo {
+      font-weight: 900; font-size: 1.6rem; color: #d4a017;
+      text-shadow: 0 0 4px rgba(212, 160, 23, 0.7);
+    }
+    header nav a {
+      margin-left: 22px; font-weight: 600; font-size: 1rem;
+    }
+    main {
+      max-width: 1200px; margin: 30px auto; padding: 0 15px;
+    }
+    h1, h2, h3 {
+      color: #333; margin-bottom: 12px; font-weight: 700;
+      text-shadow: 0 0 3px rgba(212, 160, 23, 0.5);
+    }
+    h1 {
+      font-size: 2.6rem; margin-bottom: 22px; text-align: center;
+    }
+    section.service {
+      background: rgba(212, 160, 23, 0.12);
+      border-radius: 15px; padding: 20px; margin-bottom: 35px;
+      box-shadow: 0 0 12px rgba(212, 160, 23, 0.6);
+      backdrop-filter: blur(10px);
+    }
+    section.service img {
+      max-width: 100%;
       border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      padding: 30px;
-      margin-bottom: 25px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 15px rgba(212, 160, 23, 0.7);
+      margin-bottom: 15px;
+      display: block;
     }
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    section.service .images-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 15px;
     }
-    .service-card h3 {color: var(--primary-color); font-weight: 700;}
-    .service-card p {line-height: 1.8;}
-    
-    .gallery img {
-      width: 100%;
-      height: 200px;
+    section.service .images-container img {
+      width: calc(33% - 10px);
+      min-width: 220px;
+      max-height: 180px;
       object-fit: cover;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
     }
-    .gallery img:hover {transform: scale(1.05);}
-    
-    .faq-section .accordion-item {
-      border: none;
-      margin-bottom: 10px;
-      border-radius: 8px;
+    section.service .content {
+      font-size: 1.1rem;
+      color: #222;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      text-align: justify;
     }
-    .faq-section .accordion-button {
-      background-color: var(--secondary-color);
-      color: var(--text-color);
+    .btn-contact {
+      background: #d4a017;
+      color: #222;
+      padding: 10px 20px;
+      border-radius: 30px;
       font-weight: 700;
-      border-radius: 8px !important;
+      box-shadow: 0 0 10px rgba(212, 160, 23, 0.8);
+      display: inline-block;
+      margin-right: 10px;
+      transition: background 0.3s ease;
+      cursor: pointer;
+      user-select: none;
+      border: none;
     }
-    .faq-section .accordion-body {
-      background-color: #fff;
-      border: 1px solid #e9ecef;
-      border-top: none;
-      border-radius: 0 0 8px 8px;
+    .btn-contact:hover {
+      background: #b58900;
     }
-    
-    footer {
-      background-color: #2c3e50;
-      color: #ecf0f1;
-      padding: 40px 0;
+    .contact-buttons {
+      margin-top: 12px;
       text-align: center;
     }
-    footer a {color: #fff; text-decoration: none;}
-    footer a:hover {text-decoration: underline;}
+    .contact-buttons button {
+      margin: 5px;
+    }
+    .contact-icon {
+      vertical-align: middle;
+      margin-left: 8px;
+      width: 24px;
+      height: 24px;
+      filter: drop-shadow(0 0 1px #222);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      padding: 15px 0;
+      border-top: 1px solid #eee;
+      margin-top: 40px;
+      user-select: none;
+    }
+    #gallery .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      justify-items: center;
+      margin-top: 20px;
+    }
+    #gallery .gallery-container img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    #gallery .gallery-container img:hover { transform: scale(1.05); }
+    @media (max-width: 768px) { #gallery .gallery-container { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { #gallery .gallery-container { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      section.service { padding: 15px; }
+      .btn-contact { margin-bottom: 10px; width: 100%; text-align: center; }
+      header nav a { margin-left: 10px; font-size: 0.9rem; }
+      section.service .images-container img {
+        width: 100%;
+        max-height: none;
+      }
+    }
   </style>
+</head>
+<body>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "لمسة ذهبية للحفلات والمناسبات",
+    "url": "https://www.lamsa-gold.store",
+    "logo": "https://www.lamsa-gold.store/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/lamsagoldksa"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+966559534118",
+      "contactType": "customer service",
+      "areaServed": "SA"
+    },
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "تأجير كنب فاخر",
+          "description": "توفير كنب فاخر ومريح بتصاميم عصرية وتقليدية للمناسبات الخاصة والحفلات، مع خدمة تركيب سريعة.",
+          "url": "https://www.lamsa-gold.store/luxury-sofas.html",
+          "serviceType": "Rental"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "تأجير طاولات وكراسي",
+          "description": "تأجير طاولات استقبال، طاولات كوكتيل، وكراسي بجودة عالية تناسب جميع أنواع المناسبات.",
+          "url": "https://www.lamsa-gold.store/tables-chairs-rental.html",
+          "serviceType": "Rental"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "تأجير خيام فاخرة",
+          "description": "خيام أوروبية وتقليدية بمقاسات متنوعة للحفلات الخارجية والداخلية مع تجهيزات متكاملة.",
+          "url": "https://www.lamsa-gold.store/tents-rental.html",
+          "serviceType": "Rental"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "تأجير مكيفات ودفايات",
+          "description": "مكيفات ودفايات حديثة لتلبية احتياجات المناسبات في الأماكن المفتوحة والمغلقة.",
+          "url": "https://www.lamsa-gold.store/ac-heaters.html",
+          "serviceType": "Rental"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "تأجير مكبرات صوت وشاشات",
+          "description": "مكبرات صوت عالية الجودة وشاشات عرض لتجهيز الحفلات والمؤتمرات بتقنية متطورة.",
+          "url": "https://www.lamsa-gold.store/audio-visual.html",
+          "serviceType": "Rental"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "تأجير جلسات شعبية ومغربية",
+          "description": "جلسات شعبية ومغربية أنيقة تضفي لمسة تراثية على المناسبات مع تصاميم متنوعة.",
+          "url": "https://www.lamsa-gold.store/traditional-seating.html",
+          "serviceType": "Rental"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "تأجير كوش أفراح",
+          "description": "كوش أفراح بتصاميم راقية ومميزة مع خدمات تنسيق وتركيب احترافية.",
+          "url": "https://www.lamsa-gold.store/wedding-decor.html",
+          "serviceType": "Rental"
+        }
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "45"
+    },
+    "faq": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما هي المناطق التي تخدمها لمسة ذهبية؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نخدم الرياض، جدة، الدمام، الخبر، والمناطق المجاورة مع توصيل سريع."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كم تكلفة تأجير الكنب في الرياض؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تبدأ الأسعار من 120 ريال حسب نوع الكنب والكمية المطلوبة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل تقدمون جلسات مغربية في جدة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، لدينا جلسات مغربية فاخرة متوفرة في جدة مع تركيب سريع."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف يمكنني الحجز؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تواصلوا معنا عبر واتساب أو الاتصال على الرقم +966559534118."
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <header>
+    <div class="logo">لمسة ذهبية للمناسبات</div>
+    <nav>
+      <a href="#tables-chairs">طاولات وكراسي</a>
+      <a href="#sofas">كنب فاخر</a>
+      <a href="#wedding-decor">كوش أفراح</a>
+      <a href="#audio-visual">شاشات وسماعات</a>
+      <a href="#tents">خيام فاخرة</a>
+      <a href="#seating">جلسات تراثية</a>
+      <a href="#hospitality">ضيافة وقهوجيين</a>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-label="مقدمة عن لمسة ذهبية" style="background: rgba(255,255,255,0.85); margin: 20px auto; padding: 20px; border-radius: 8px; max-width: 900px;">
+      <h2 style="color: #1a73e8;">لمسة ذهبية: تجهيزات متكاملة للحفلات والمناسبات في الرياض، جدة، الدمام</h2>
+      <p style="line-height: 1.8; color: #444;">
+        في <strong>لمسة ذهبية</strong>، نقدم حلولًا متكاملة لتأجير مستلزمات الحفلات والمناسبات. من <strong>تأجير كنب فاخر</strong> إلى <strong>طاولات وكراسي أنيقة</strong>، <strong>خيام أوروبية</strong>، <strong>جلسات شعبية ومغربية</strong>، <strong>مكيفات</strong>، و<strong>مكبرات صوت</strong>، نحن هنا لنجعل مناسبتك لا تُنسى. خدماتنا تشمل الرياض، جدة، الدمام، الخبر، الظهران، والقطيف. نوفر تجهيزات عالية الجودة مع تركيب سريع وأسعار تنافسية. احجز الآن لتجربة تنظيم احترافي يناسب جميع أنواع المناسبات من حفلات زفاف إلى فعاليات رسمية.
+      </p>
+    </section>
+
+    <h1>لمسة ذهبية لتأجير مستلزمات المناسبات: طاولات، كراسي، كنب، خيام، وأكثر</h1>
+    <div class="contact-buttons" style="text-align: center; margin: 30px 0;">
+      <a href="https://wa.me/966559534118" target="_blank" aria-label="واتساب" style="display: inline-block; margin: 10px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="واتساب" width="60" height="60" style="cursor: pointer;" />
+      </a>
+      <a href="tel:0559534118" aria-label="اتصال مباشر" style="display: inline-block; margin: 10px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="اتصال" width="60" height="60" style="cursor: pointer;" />
+      </a>
+    </div>
+
+    <!-- تأجير طاولات وكراسي -->
+    <section id="tables-chairs" class="service">
+      <h2>تأجير طاولات وكراسي لجميع المناسبات</h2>
+      <div class="images-container">
+        <img src="https://i.postimg.cc/v8qHTgCH/b5bd6e6a-bf35-4b58-98f2-658038b580fc.jpg" alt="طاولات وكراسي" />
+        <img src="https://i.postimg.cc/GtNwq9cY/IMG-3035.jpg" alt="طاولات استقبال" />
+      </div>
+      <p class="content">
+        في <strong>لمسة ذهبية</strong>، نقدم خدمات تأجير <strong>طاولات وكراسي</strong> بتصاميم أنيقة تناسب حفلات الزفاف، المؤتمرات، والمناسبات الخاصة. تشمل خياراتنا <strong>طاولات استقبال</strong>، <strong>طاولات كوكتيل</strong>، وكراسي فاخرة (ملكية وشفافة) لتلبية جميع احتياجاتك. نوفر خدمة توصيل وتركيب سريعة في <strong>الرياض، جدة، الدمام، والخبر</strong>. سواء كنت تخطط لحفل صغير أو حدث كبير، نحن هنا لتوفير تجهيزات عالية الجودة بأسعار تنافسية. احجز الآن لإضفاء لمسة من الأناقة على مناسبتك!
+      </p>
+      <h3>أنواع الطاولات والكراسي المتوفرة</h3>
+      <ul>
+        <li>طاولات استقبال فاخرة.</li>
+        <li>كراسي ملكية وشفافة.</li>
+        <li>طاولات كوكتيل للحفلات العصرية.</li>
+        <li>تأجير طاولات وكراسي في الرياض، جدة، والدمام.</li>
+      </ul>
+      <h3>لماذا تختار خدمتنا؟</h3>
+      <ul>
+        <li>تركيب وتوصيل سريع في غضون 24 ساعة.</li>
+        <li>تجهيزات متكاملة تشمل الإضاءة والديكور.</li>
+        <li>أسعار تنافسية مع عروض حصرية للحجوزات المبكرة.</li>
+      </ul>
+      <div class="contact-buttons">
+        <a href="https://wa.me/966559534118" target="_blank" class="btn-contact">تواصل عبر واتساب <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="contact-icon" alt="واتساب" /></a>
+        <a href="tel:0559534118" class="btn-contact">اتصل الآن <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" class="contact-icon" alt="اتصال" /></a>
+      </div>
+    </section>
+
+    <!-- تأجير كنب -->
+    <section id="sofas" class="service">
+      <h2>تأجير كنب فاخر للحفلات والمناسبات</h2>
+      <div class="images-container">
+        <img src="https://i.postimg.cc/ZKbR0288/a3cfc92d-e51d-47c8-a4c5-02553e010ed6.jpg" alt="كنب فاخر" />
+        <img src="https://i.postimg.cc/d0rv5jRQ/d82873e4-678a-45fd-bb2d-3df556fd435a.jpg" alt="كنب ملكي" />
+        <img src="https://i.postimg.cc/cHWW2tTR/e8b99023-9378-4d83-b72c-037487686cb2.jpg" alt="كنب عصري" />
+      </div>
+      <p class="content">
+        نقدم في <strong>لمسة ذهبية</strong> خدمة تأجير <strong>كنب فاخر</strong> بتصاميم ملكية وعصرية تناسب جميع المناسبات. من <strong>كنب ثلاثي</strong> إلى <strong>كنب مخملي</strong>، نوفر خيارات تناسب حفلات الزفاف، الاجتماعات، والفعاليات الخاصة. خدماتنا تشمل التوصيل والتركيب في <strong>الرياض، جدة، الدمام، والخبر</strong>. اجعل مناسبتك مميزة مع كنب مريح وأنيق يضيف لمسة من الفخامة. تواصل معنا للحجز بأسعار تنافسية!
+      </p>
+      <h3>أنواع الكنب المتوفرة</h3>
+      <ul>
+        <li>كنب ملكي فاخر.</li>
+        <li>كنب ثلاثي عصري.</li>
+        <li>كنب مخملي مريح.</li>
+        <li>تأجير كنب في الرياض، جدة، والدمام.</li>
+      </ul>
+      <h3>مميزات خدمتنا</h3>
+      <ul>
+        <li>خدمة تركيب سريعة ودقيقة.</li>
+        <li>تصاميم متنوعة تناسب كل الأذواق.</li>
+        <li>خصومات خاصة للحجوزات الكبيرة.</li>
+      </ul>
+      <div class="contact-buttons">
+        <a href="https://wa.me/966559534118" target="_blank" class="btn-contact">تواصل عبر واتساب <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="contact-icon" alt="واتساب" /></a>
+        <a href="tel:0559534118" class="btn-contact">اتصل الآن <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" class="contact-icon" alt="اتصال" /></a>
+      </div>
+    </section>
+
+    <!-- تأجير كوش أفراح وطاولات استقبال -->
+    <section id="wedding-decor" class="service">
+      <h2>تأجير كوش أفراح وطاولات استقبال</h2>
+      <div class="images-container">
+        <img src="https://i.postimg.cc/d0QfxH0t/IMG-3066.jpg" alt="كوش أفراح" />
+        <img src="https://i.postimg.cc/XJfbNnk6/c0c15521-69e3-4c2c-8770-bcc5196b093b.jpg" alt="طاولات استقبال" />
+        <img src="https://i.postimg.cc/SN5tPwc6/5c181b66-4bcd-4c76-87a1-96ced5f2a7bf.jpg" alt="طاولات كوكتيل" />
+      </div>
+      <p class="content">
+        في <strong>لمسة ذهبية</strong>، نقدم <strong>كوش أفراح</strong> بتصاميم راقية وطاولات استقبال وكوكتيل تناسب جميع الحفلات. خدماتنا تشمل تنسيقًا احترافيًا وتركيبًا سريعًا في <strong>الرياض، جدة، الدمام، والخبر</strong>. سواء كنت تخطط لحفل زفاف أو مناسبة خاصة، نحن هنا لتوفير ديكور يعكس ذوقك الرفيع. احجز الآن لتجربة تنظيم لا مثيل له!
+      </p>
+      <h3>أنواع الكوش وطاولات الاستقبال</h3>
+      <ul>
+        <li>كوش أفراح بتصاميم عصرية وكلاسيكية.</li>
+        <li>طاولات استقبال أنيقة.</li>
+        <li>طاولات كوكتيل للحفلات الراقية.</li>
+      </ul>
+      <h3>مميزات خدمتنا</h3>
+      <ul>
+        <li>تصاميم مخصصة حسب طلب العميل.</li>
+        <li>تركيب وتوصيل مجاني.</li>
+        <li>أسعار تنافسية مع خصومات موسمية.</li>
+      </ul>
+      <div class="contact-buttons">
+        <a href="https://wa.me/966559534118" target="_blank" class="btn-contact">تواصل عبر واتساب <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="contact-icon" alt="واتساب" /></a>
+        <a href="tel:0559534118" class="btn-contact">اتصل الآن <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" class="contact-icon" alt="اتصال" /></a>
+      </div>
+    </section>
+
+    <!-- تأجير شاشات ومكبرات صوت -->
+    <section id="audio-visual" class="service">
+      <h2>تأجير شاشات عرض ومكبرات صوت حديثة</h2>
+      <div class="images-container">
+        <img src="https://i.postimg.cc/zfpQx37B/e1ec96b1-ba76-40f1-b542-cd43bec45ffb.jpg" alt="شاشات عرض" />
+        <img src="https://i.postimg.cc/dtKztMhJ/IMG-3162.jpg" alt="مكبرات صوت" />
+        <img src="https://i.postimg.cc/rs2YmWFf/IMG-3086.jpg" alt="ليزرات" />
+      </div>
+      <p class="content">
+        نوفر في <strong>لمسة ذهبية</strong> خدمات تأجير <strong>شاشات عرض</strong>، <strong>مكبرات صوت</strong>، و<strong>ليزرات</strong> لتجهيز الحفلات والمؤتمرات بأحدث التقنيات. خدماتنا تشمل تركيبًا احترافيًا وتوصيلًا سريعًا في <strong>الرياض، جدة، الدمام، والخبر</strong>. اجعل مناسبتك مميزة بتجربة صوتية وبصرية استثنائية. تواصل معنا للحجز الآن!
+      </p>
+      <h3>أنواع المعدات المتوفرة</h3>
+      <ul>
+        <li>شاشات عرض عالية الدقة.</li>
+        <li>مكبرات صوت دي جي حديثة.</li>
+        <li>ليزرات وإضاءة احترافية.</li>
+      </ul>
+      <h3>مميزات خدمتنا</h3>
+      <ul>
+        <li>تقنيات حديثة وجودة عالية.</li>
+        <li>تركيب وتشغيل احترافي.</li>
+        <li>أسعار تنافسية مع عروض خاصة.</li>
+      </ul>
+      <div class="contact-buttons">
+        <a href="https://wa.me/966559534118" target="_blank" class="btn-contact">تواصل عبر واتساب <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="contact-icon" alt="واتساب" /></a>
+        <a href="tel:0559534118" class="btn-contact">اتصل الآن <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" class="contact-icon" alt="اتصال" /></a>
+      </div>
+    </section>
+
+    <!-- تأجير خيام -->
+    <section id="tents" class="service">
+      <h2>تأجير خيام فاخرة وأوروبية</h2>
+      <div class="images-container">
+        <img src="https://i.postimg.cc/252znkBd/bd81bc5c-c85c-4745-9f2f-e541b1b015bc.jpg" alt="خيام أوروبية" />
+        <img src="https://i.postimg.cc/QMydRNx8/f6243c52-b22a-4aa0-a073-2c59cb00f8c6.jpg" alt="خيام ملكية" />
+      </div>
+      <p class="content">
+        نقدم في <strong>لمسة ذهبية</strong> خدمات تأجير <strong>خيام أوروبية</strong> وتقليدية بتصاميم فاخرة تناسب الحفلات الخارجية والداخلية. خيامنا مقاومة للعوامل الجوية ومجهزة بإضاءة ومكيفات. نوفر خدماتنا في <strong>الرياض، جدة، الدمام، والخبر</strong> مع تركيب سريع وأسعار تنافسية. احجز خيمتك الآن لمناسبة لا تُنسى!
+      </p>
+      <h3>أنواع الخيام المتوفرة</h3>
+      <ul>
+        <li>خيام أوروبية مكيفة.</li>
+        <li>خيام ملكية للمناسبات الكبيرة.</li>
+        <li>بيوت شعر تقليدية.</li>
+      </ul>
+      <h3>مميزات خدمتنا</h3>
+      <ul>
+        <li>تركيب سريع وتجهيزات متكاملة.</li>
+        <li>تصاميم فاخرة تناسب جميع الأذواق.</li>
+        <li>خصومات خاصة للحجوزات المبكرة.</li>
+      </ul>
+      <div class="contact-buttons">
+        <a href="https://wa.me/966559534118" target="_blank" class="btn-contact">تواصل عبر واتساب <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="contact-icon" alt="واتساب" /></a>
+        <a href="tel:0559534118" class="btn-contact">اتصل الآن <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" class="contact-icon" alt="اتصال" /></a>
+      </div>
+    </section>
+
+    <!-- تأجير جلسات شعبية -->
+    <section id="seating" class="service">
+      <h2>تأجير جلسات شعبية ومغربية</h2>
+      <div class="images-container">
+        <img src="https://i.postimg.cc/VNbxkzWL/IMG-3033.jpg" alt="جلسات شعبية" />
+        <img src="https://i.postimg.cc/Y2fwFqKv/9ba4cf80-fdd9-4fad-9598-43ec5083b528.jpg" alt="جلسات مغربية" />
+      </div>
+      <p class="content">
+        في <strong>لمسة ذهبية</strong>، نقدم <strong>جلسات شعبية ومغربية</strong> تضفي لمسة تراثية على مناسبتك. سواء كنت تبحث عن جلسات أرضية أو مرتفعة، لدينا خيارات تناسب حفلات الزفاف والمناسبات الاجتماعية. خدماتنا تشمل التوصيل والتركيب في <strong>الرياض، جدة، الدمام، والخبر</strong>. احجز الآن لتجربة جلسات مريحة وأنيقة!
+      </p>
+      <h3>أنواع الجلسات المتوفرة</h3>
+      <ul>
+        <li>جلسات مغربية فاخرة.</li>
+        <li>جلسات شعبية تقليدية.</li>
+        <li>جلسات يومية للمناسبات الصغيرة.</li>
+      </ul>
+      <h3>مميزات خدمتنا</h3>
+      <ul>
+        <li>تصاميم تراثية أنيقة.</li>
+        <li>تركيب سريع وتوصيل مجاني.</li>
+        <li>أسعار تنافسية مع خصومات موسمية.</li>
+      </ul>
+      <div class="contact-buttons">
+        <a href="https://wa.me/966559534118" target="_blank" class="btn-contact">تواصل عبر واتساب <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="contact-icon" alt="واتساب" /></a>
+        <a href="tel:0559534118" class="btn-contact">اتصل الآن <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" class="contact-icon" alt="اتصال" /></a>
+      </div>
+    </section>
+
+    <!-- قهوجيين وصبابين -->
+    <section id="hospitality" class="service">
+      <h2>خدمات قهوجيين وصبابين للضيافة</h2>
+      <p class="content">
+        في <strong>لمسة ذهبية</strong>، نقدم خدمات <strong>قهوجيين وصبابين</strong> محترفين لتقديم الضيافة التقليدية بأسلوب راقي. فريقنا يقدم القهوة والشاي بطريقة أنيقة تناسب حفلات الزفاف والمناسبات الخاصة. خدماتنا متوفرة في <strong>الرياض، جدة، الدمام، والخبر</strong>. تواصل معنا لإضفاء لمسة تراثية على مناسبتك!
+      </p>
+      <h3>مميزات خدمتنا</h3>
+      <ul>
+        <li>فريق محترف بزي تقليدي.</li>
+        <li>تقديم قهوة عربية وشاي بجودة عالية.</li>
+        <li>خدمة 24 ساعة مع أسعار تنافسية.</li>
+      </ul>
+      <div class="contact-buttons">
+        <a href="https://wa.me/966559534118" target="_blank" class="btn-contact">تواصل عبر واتساب <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="contact-icon" alt="واتساب" /></a>
+        <a href="tel:0559534118" class="btn-contact">اتصل الآن <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" class="contact-icon" alt="اتصال" /></a>
+      </div>
+    </section>
+
+    <!-- الأسئلة الشائعة -->
+    <section class="section faq-section" id="faq">
+      <h2>الأسئلة الشائعة</h2>
+      <div>
+        <h3>✔ ما هي المناطق التي تخدمونها؟</h3>
+        <p>نخدم الرياض، جدة، الدمام، الخبر، والمناطق المجاورة مع توصيل مجاني.</p>
+        <h3>✔ كيف يمكنني الحجز؟</h3>
+        <p>تواصلوا معنا عبر <a href="tel:0559534118" style="color: #1a73e8; font-weight: bold;">0559534118</a> أو <a href="https://wa.me/966559534118" style="color: #25D366; font-weight: bold;">واتساب</a>.</p>
+        <h3>✔ هل تقدمون خصومات؟</h3>
+        <p>نعم، نقدم خصومات تصل إلى 25% للحجوزات الكبيرة.</p>
+      </div>
+    </section>
+
+    <!-- لماذا تختارنا -->
+    <section class="section why-us">
+      <h2>⭐ لماذا تختار لمسة ذهبية؟</h2>
+      <div>
+        <h3>🔹 كيفية الحجز</h3>
+        <p>تواصل معنا عبر <a href="tel:0559534118" style="color: #1a73e8; font-weight: bold;">0559534118</a> أو <a href="https://wa.me/966559534118" style="color: #25D366; font-weight: bold;">واتساب</a>، وسنجري معك الخطوات التالية:</p>
+        <ol>
+          <li>تحديد نوع الخدمة المطلوبة.</li>
+          <li>اختيار التاريخ والموقع.</li>
+          <li>تأكيد الكمية والتجهيزات.</li>
+          <li>توصيل وتركيب مجاني.</li>
+        </ol>
+        <h3>🔹 الأسعار</h3>
+        <ul>
+          <li>كراسي: تبدأ من <strong>6 ريال/قطعة</strong>.</li>
+          <li>طاولات: تبدأ من <strong>25 ريال/طاولة</strong>.</li>
+          <li>كنب: تبدأ من <strong>120 ريال/قطعة</strong>.</li>
+          <li>خصومات للحفلات الكبيرة.</li>
+        </ul>
+        <h3>🔹 مميزاتنا</h3>
+        <ul>
+          <li>✅ توصيل سريع في الرياض، جدة، والدمام.</li>
+          <li>✅ جودة عالية مع ضمان رضا العميل.</li>
+          <li>✅ أسعار تنافسية مع خصومات تصل إلى 25%.</li>
+          <li>✅ دعم فني متوفر على مدار الساعة.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 مؤسسة لمسة ذهبية لتأجير مستلزمات الحفلات والمناسبات. جميع الحقوق محفوظة.
+    <p>للاستفسارات: <a href="tel:0559534118">0559534118</a> | <a href="https://wa.me/966559534118">واتساب</a></p>
+  </footer>
+
+  <script>
+    // تحميل الصور بشكل متدرج
+    document.addEventListener('DOMContentLoaded', function() {
+      const images = document.querySelectorAll('img[loading="lazy"]');
+      if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.dataset.src || img.src;
+              img.onload = function() {
+                this.classList.add('loaded');
+              };
+              observer.unobserve(img);
+            }
+          });
+        }, {
+          rootMargin: '200px 0px'
+        });
+        images.forEach(img => {
+          if (!img.classList.contains('loaded')) {
+            imageObserver.observe(img);
+          }
+        });
+      } else {
+        images.forEach(img => {
+          img.src = img.dataset.src || img.src;
+          img.onload = function() {
+            this.classList.add('loaded');
+          };
+        });
+      }
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- JSON-LD لتعريف النشاط التجاري المحلي -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "الاحترافية لتأجير مستلزمات الحفلات",
+    "name": "لمسة ذهبية للحفلات والمناسبات",
+    "image": "https://www.lamsa-gold.store/logo.png",
+    "url": "https://www.lamsa-gold.store",
     "telephone": "+966559534118",
-    "description": "حلول متكاملة لتأجير كنب، كراسي، طاولات، جلسات شعبية، مكيفات، إضاءة، مسارح وغيرها من مستلزمات المناسبات والفعاليات.",
-    "address": {"@type":"PostalAddress","addressCountry":"SA"}
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "طريق الملك فهد",
+      "addressLocality": "الدمام",
+      "addressRegion": "المنطقة الشرقية",
+      "postalCode": "34714",
+      "addressCountry": "SA"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "22:00"
+      }
+    ],
+    "priceRange": "متوسط",
+    "description": "تأجير طاولات، كراسي، كنب فاخر، خيام أوروبية، جلسات شعبية، ومكبرات صوت في الرياض، جدة، والدمام مع خدمة تركيب سريعة."
   }
   </script>
-</head>
-<body>
-
-<header class="container">
-  <div class="header-banner text-center">
-    <h1>الاحترافية لخدمات المناسبات والفعاليات</h1>
-    <p class="lead">حلول متكاملة لتأجير جميع مستلزمات حفلتك: من الكنب الفاخر إلى أحدث أنظمة الصوت والإضاءة.</p>
-    <div class="contact-buttons">
-      <a href="https://wa.me/966559534118" target="_blank" class="btn btn-success btn-lg btn-contact"><i class="fa-brands fa-whatsapp"></i> تواصل واتساب</a>
-      <a href="tel:0559534118" class="btn btn-outline-light btn-lg btn-contact"><i class="fa-solid fa-phone"></i> اتصال مباشر</a>
-    </div>
-  </div>
-</header>
-
-<main class="container">
-
-  <section class="section">
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="service-card h-100">
-          <h2>خبرة تمتد لسنوات في تأجير مستلزمات الحفلات</h2>
-          <p>
-            نحن نقدم خدمات تأجير شاملة ومبتكرة لمختلف المناسبات. سواء كنت تخطط لزواج، حفل تخرج، مؤتمر عمل، أو أي فعالية خاصة، لدينا كل ما تحتاجه لإنجاحها. خدماتنا تشمل تأجير الكنب الفاخر، تأجير الكراسي والطاولات بجميع أنواعها، تأجير الجلسات الشعبية والأرضية، وتأجير أحدث معدات الصوت والإضاءة.
-          </p>
-          <p>
-            نحن نضمن جودة عالية في كل قطعة نقدمها، مع خدمات توصيل وتركيب محترفة لضمان راحتك. شعارنا هو الاهتمام بأدق التفاصيل لتجربة لا تُنسى.
-          </p>
-          <p class="text-muted small mt-3">
-            كلمات مفتاحية: تأجير مستلزمات الحفلات، تأجير معدات المناسبات، تجهيز فعاليات، تأجير أثاث للمناسبات، خدمات حفلات، تخطيط فعاليات، تأجير معدات حفلات.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-6 gallery">
-        <div class="row g-3">
-          <div class="col-6"><img src="https://i.postimg.cc/mD8zQ19N/IMG-2298.jpg" alt="كنب للمناسبات"></div>
-          <div class="col-6"><img src="https://i.postimg.cc/3wW4Kj4Y/IMG-2299.jpg" alt="طاولات وكراسي للحفلات"></div>
-          <div class="col-6"><img src="https://i.postimg.cc/85zC9G5X/event-bg-2.jpg" alt="تجهيزات حفلات"></div>
-          <div class="col-6"><img src="https://i.postimg.cc/qRpF2F3m/IMG-2309.jpg" alt="طاولات حفلات"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <hr>
-
-  <section class="section">
-    <h2 class="text-center mb-5" style="color: var(--primary-color); font-weight: 700;">خدماتنا المتخصصة</h2>
-    <div class="row g-4">
-      
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card">
-          <h3>تأجير أثاث المناسبات</h3>
-          <p>
-            نوفر مجموعة واسعة من أثاث المناسبات يشمل *تأجير كنب ملكي، **تأجير كنب مودرن، **تأجير طاولات طعام دائرية، **تأجير طاولات قزاز، **تأجير كراسي للعرسان، **تأجير كراسي للحفلات* وغيرها. كل قطعة مصممة لإضافة لمسة أناقة وراحة لفعاليتك.
-          </p>
-        </div>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card">
-          <h3>تأجير الجلسات الشعبية</h3>
-          <p>
-            لإضفاء طابع تقليدي ودافئ، نقدم *تأجير جلسات شعبية* و*تأجير جلسات مغربية، بالإضافة إلى **جلسات أرضية* مريحة ومناسبة للمناسبات العائلية والتجمعات الخاصة.
-          </p>
-        </div>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card">
-          <h3>أنظمة الصوت والإضاءة والمسارح</h3>
-          <p>
-            نقدم حلولًا متكاملة من *تأجير سماعات احترافية، **تأجير عقود إضاءة، وتأجير ليزرات* لإضفاء جو مميز على الحفل. كما نوفر *تأجير مسارح وشاشات عرض* للفعاليات الكبيرة والمؤتمرات.
-          </p>
-        </div>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card">
-          <h3>تأجير أنظمة التكييف</h3>
-          <p>
-            لضمان راحة الحضور في الأجواء الحارة، نوفر *تأجير مكيفات* متنقلة و*أنظمة تبريد* قوية وفعالة مناسبة للصالات المفتوحة والفعاليات الخارجية.
-          </p>
-        </div>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card">
-          <h3>تأجير السجاد والمدخل</h3>
-          <p>
-            تأجير *سجاد ممرات* و*سجاد استقبال* بألوان وتصاميم مختلفة لإضافة لمسة من الفخامة والترتيب لمدخل حفلتك.
-          </p>
-        </div>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <div class="service-card">
-          <h3>خدمات الضيافة</h3>
-          <p>
-            لدينا فريق مختص لتقديم الضيافة، يشمل *تأجير ركن ضيافة متكامل* مع *تأجير قهوجيين وصبابين* محترفين لخدمة ضيوفك بأعلى مستوى.
-          </p>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-
-  <hr>
-
-  <section class="section faq-section">
-    <h2 class="text-center mb-4" style="color: var(--primary-color); font-weight: 700;">أسئلة متكررة</h2>
-    <div class="accordion" id="faqAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            ما هي المناطق التي تغطونها بخدمات التأجير؟
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            نحن نخدم مدينة الرياض والمناطق المحيطة بها. يرجى التواصل معنا للتأكد من تغطية موقعك.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            هل يمكنني تأجير قطعة واحدة فقط؟
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            نعم، يمكننا تأجير أي عدد من القطع التي تحتاجها، من قطعة واحدة إلى تجهيز حفل كامل.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            ما هي المدة المتاحة للتأجير؟
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            نقدم خيارات تأجير متنوعة تشمل التأجير اليومي، الأسبوعي، أو لفترات أطول حسب طبيعة المناسبة واحتياجاتك.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-</main>
-
-<footer class="mt-5">
-  <div class="container">
-    <p>جميع الحقوق محفوظة © الاحترافية لخدمات المناسبات. للتواصل: <a href="tel:0559534118">0559534118</a></p>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
